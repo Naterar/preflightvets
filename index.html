@@ -1,133 +1,195 @@
-<title>Preflight Vets</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Preflight Vets — verified veteran resources</title>
+<link rel="icon" type="image/png" href="preflight-logo-dark.png">
+<meta name="description" content="Scholarships, hiring events, free training and benefits open to the military community. Every item confirmed against the organizer's own page before it goes up.">
+<meta property="og:title" content="Preflight Vets">
+<meta property="og:description" content="Verified veteran resources. Checked against the source, not copied off a graphic.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <style>
-/* Layout: one column. Entries come from data.json, sort by deadline, and move
-   themselves to "Recently closed" once the date passes. Committed dark navy. */
+/* Flash-sheet family, built for reading: aged paper ground, slab headlines, rope rules
+   and the star-compass mark — without the card furniture that would fight a long list.
+   Entries come from data.json, sort by deadline, and move themselves to
+   "Recently closed" once the date passes. Single committed light theme. */
 :root{
-  color-scheme: dark;
-  --navy:#0D1B33;
-  --navy-2:#16294A;
-  --line:#22375A;
-  --ivory:#F4F1EA;
-  --muted:#8FA7C9;
-  --dim:#64799B;
-  --red:#C1372F;
-  --blue:#3A6EA5;
-  --amber:#D99A2B;
-  --display:'Oswald','Arial Narrow',sans-serif;
-  --body:'IBM Plex Sans',system-ui,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  color-scheme: light;
+  --cream:#F2E7D2;
+  --paper:#E7D9BD;
+  --paper-2:#EFE3CA;
+  --ink:#241F1C;
+  --navy:#1E3A5C;
+  --red:#9E2A24;
+  --tan:#B08B5E;
+  --rule:rgba(36,31,28,.26);
+  --rule-soft:rgba(36,31,28,.14);
+  --dim:#6B5F52;
+  --display:'Alfa Slab One',Georgia,serif;
+  --cond:'Oswald','Arial Narrow',sans-serif;
+  --body:'IBM Plex Sans',system-ui,-apple-system,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--navy);color:var(--ivory);font-family:var(--body);
-  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
-.stripe{display:flex;height:8px}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.56;
+  -webkit-font-smoothing:antialiased;
+  background:var(--cream);
+  background-image:
+    radial-gradient(ellipse 1200px 700px at 22% 0%,rgba(255,255,255,.55) 0%,rgba(0,0,0,0) 60%),
+    radial-gradient(ellipse 900px 600px at 86% 30%,rgba(120,90,45,.10) 0%,rgba(0,0,0,0) 62%);
+  background-attachment:fixed;
+}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+.stripe{display:flex;height:9px}
 .stripe i{flex:1}
-.wrap{max-width:720px;margin:0 auto;padding-inline:20px;padding-block:0 66px}
 
-header{display:flex;align-items:center;gap:14px;padding-block:28px 0}
-header svg{width:42px;height:42px;flex-shrink:0}
-.word{font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:.5px;
-  text-transform:uppercase;line-height:1}
+.wrap{max-width:1180px;margin:0 auto;
+  padding-left:max(20px,env(safe-area-inset-left,0px));
+  padding-right:max(20px,env(safe-area-inset-right,0px));
+  padding-block:0 80px}
+@media (min-width:1500px){ body{font-size:18px} .wrap{max-width:1420px} }
+@media (min-width:1960px){ body{font-size:19px} .wrap{max-width:1640px} }
+
+/* ---- masthead ---- */
+header{display:flex;align-items:center;gap:15px;padding-block:30px 0}
+header img.mark{height:58px;width:auto;flex-shrink:0;display:block}
+@media (min-width:1500px){ header img.mark{height:66px} }
+.word{font-family:var(--cond);font-weight:700;font-size:28px;letter-spacing:.6px;
+  text-transform:uppercase;line-height:1;color:var(--navy)}
 .word s{text-decoration:none;display:block;font-family:var(--mono);font-size:11px;
-  font-weight:400;letter-spacing:2.3px;color:var(--dim);text-transform:uppercase;margin-top:5px}
+  font-weight:400;letter-spacing:2.4px;color:var(--dim);text-transform:uppercase;margin-top:6px}
 
-h1{font-family:var(--display);font-weight:700;text-transform:uppercase;
-  font-size:clamp(34px,7.6vw,56px);line-height:1;letter-spacing:-.5px;margin:38px 0 0;
-  text-wrap:balance}
+.hero{display:grid;gap:30px;align-items:end;margin-top:44px}
+@media (min-width:1100px){ .hero{grid-template-columns:1.25fr 1fr} }
+.hero > div{min-width:0}
+h1{font-family:var(--display);font-size:clamp(38px,6.2vw,76px);line-height:1.02;
+  letter-spacing:-1.5px;margin:0;color:var(--navy);text-wrap:balance}
 h1 em{font-style:normal;color:var(--red)}
-.lede{font-size:18px;color:var(--muted);margin:18px 0 0;max-width:58ch}
-.lede b{color:var(--ivory);font-weight:600}
-.stamp{margin:20px 0 0;font-family:var(--mono);font-size:13px;color:var(--dim)}
+.lede{font-size:clamp(17px,1.4vw,20px);color:var(--ink);opacity:.86;margin:0;max-width:52ch}
+.lede b{color:var(--navy);font-weight:600;opacity:1}
+.stamp{margin:22px 0 0;font-family:var(--mono);font-size:13px;color:var(--dim);
+  letter-spacing:.3px}
 
-h2{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:2.4px;
-  text-transform:uppercase;color:var(--blue);margin:44px 0 16px;padding-bottom:11px;
-  border-bottom:1px solid var(--line)}
+/* ---- rope-rule section heads ---- */
+.sec{display:flex;align-items:center;gap:16px;margin:56px 0 20px}
+.sec h2{font-family:var(--cond);font-weight:600;font-size:21px;letter-spacing:3.4px;
+  text-transform:uppercase;color:var(--red);margin:0;white-space:nowrap}
+.sec .rope{flex:1;min-width:0;height:26px;opacity:.75}
+.sec .rope svg{width:100%;height:26px;display:block}
 
-.list{display:flex;flex-direction:column;gap:16px}
-.entry{background:var(--navy-2);border:1px solid var(--line);border-radius:9px;padding:22px 23px}
-.entry.shut{opacity:.6}
-.entry .org{font-family:var(--display);font-weight:700;font-size:27px;text-transform:uppercase;
-  line-height:1.05;letter-spacing:.2px}
-.entry .what{color:var(--muted);font-size:16px;margin-top:6px}
-.facts{display:grid;grid-template-columns:auto 1fr;gap:7px 16px;margin-top:17px;font-size:15px}
-.facts dt{font-family:var(--mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;
-  color:var(--dim);padding-top:3px}
+/* ---- entries ---- */
+.list{display:grid;gap:22px;align-items:start}
+@media (min-width:1100px){ .list{grid-template-columns:repeat(auto-fit,minmax(430px,1fr))} }
+.entry{background:var(--paper-2);border:2px solid var(--ink);padding:24px 25px;
+  box-shadow:6px 6px 0 rgba(36,31,28,.16);min-width:0;
+  display:flex;flex-direction:column}
+.entry.shut{opacity:.58;box-shadow:none}
+.entry .org{font-family:var(--display);font-size:30px;line-height:1.06;color:var(--navy);
+  letter-spacing:-.4px;margin-top:4px}
+.entry .what{color:var(--ink);opacity:.82;font-size:17px;margin-top:8px}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:9px 18px;margin:18px 0 0;font-size:16px}
+.facts dt{font-family:var(--cond);font-size:13px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--red);padding-top:4px;font-weight:600}
 .facts dd{margin:0}
-.go{display:inline-block;margin-top:18px;font-family:var(--mono);font-size:15px;
-  color:var(--ivory);background:var(--navy);border:1px solid var(--blue);border-radius:6px;
-  padding:10px 15px;text-decoration:none;word-break:break-all}
-.go:hover{border-color:var(--ivory)}
-.go:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
-.pill{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:1.4px;
-  text-transform:uppercase;padding:5px 10px;border-radius:5px;margin-bottom:12px;
-  background:rgba(217,154,43,.14);color:var(--amber);border:1px solid rgba(217,154,43,.4)}
-.pill.closed{background:rgba(100,121,155,.14);color:var(--dim);border-color:var(--line)}
-.pill.soon{background:rgba(193,55,47,.16);color:#F08A84;border-color:rgba(193,55,47,.5)}
-.pill.open{background:rgba(58,110,165,.16);color:#8FBBE8;border-color:rgba(58,110,165,.5)}
+@media (max-width:560px){
+  .facts{grid-template-columns:1fr;gap:2px}
+  .facts dt{padding-top:12px}
+}
+.go{display:inline-block;margin-top:auto;align-self:flex-start;font-family:var(--cond);
+  font-size:17px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;
+  color:var(--cream);background:var(--navy);border:2px solid var(--ink);
+  padding:11px 18px;text-decoration:none;word-break:break-word;
+  box-shadow:4px 4px 0 rgba(36,31,28,.22);margin-top:22px}
+.go:hover{background:var(--red)}
+.pill{display:inline-block;font-family:var(--cond);font-size:13px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;padding:5px 11px;
+  background:var(--cream);color:var(--navy);border:2px solid var(--navy)}
+.pill.closed{color:var(--dim);border-color:var(--rule);background:transparent}
+.pill.soon{color:var(--cream);background:var(--red);border-color:var(--red)}
+.pill.open{color:var(--navy);background:var(--cream);border-color:var(--navy)}
 
-.note{border:1px dashed var(--line);border-radius:9px;padding:22px 23px;color:var(--muted);
-  font-size:16px}
+.note{border:2px dashed var(--rule);padding:24px 25px;color:var(--ink);opacity:.8}
 
-.check{background:var(--navy-2);border-left:5px solid var(--blue);border-radius:0 8px 8px 0;
-  padding:22px 24px}
-.check ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
-.check li{display:grid;grid-template-columns:auto 1fr;gap:12px;font-size:16px}
-.check code{font-family:var(--mono);font-size:13px;color:var(--blue);padding-top:2px}
-.sig{margin:18px 0 0;font-family:var(--mono);font-size:13px;color:var(--dim)}
+/* ---- verified block ---- */
+.check{background:var(--paper);border:2px solid var(--ink);padding:26px 28px;
+  box-shadow:6px 6px 0 rgba(36,31,28,.16)}
+.check ul{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+@media (min-width:1100px){ .check ul{grid-template-columns:1fr 1fr;gap:13px 34px} }
+.check li{display:grid;grid-template-columns:auto 1fr;gap:13px;font-size:17px;min-width:0}
+.check .tick{width:22px;height:22px;flex-shrink:0;margin-top:3px}
+.sig{margin:22px 0 0;font-family:var(--mono);font-size:13px;color:var(--dim)}
 
-footer{margin-top:50px;padding-top:22px;border-top:1px solid var(--line);
-  display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--dim)}
-footer a{color:var(--muted)}
+footer{margin-top:60px;padding-top:24px;border-top:2px solid var(--ink);
+  display:flex;gap:18px;flex-wrap:wrap;align-items:center;font-size:15px;color:var(--dim);
+  font-family:var(--cond);letter-spacing:1.4px;text-transform:uppercase}
+footer a{color:var(--navy);font-weight:600}
 footer .sp{flex-grow:1}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+</head>
+<body>
 
 <div class="stripe">
-  <i style="background:#C1372F"></i><i style="background:#F4F1EA"></i>
-  <i style="background:#C1372F"></i><i style="background:#F4F1EA"></i>
-  <i style="background:#C1372F"></i>
+  <i style="background:#9E2A24"></i><i style="background:#F2E7D2"></i>
+  <i style="background:#1E3A5C"></i><i style="background:#F2E7D2"></i>
+  <i style="background:#9E2A24"></i>
 </div>
 
 <div class="wrap">
+
   <header>
-    <svg viewBox="0 0 200 200" role="img" aria-label="Preflight Vets">
-      <g fill="none" stroke="#F4F1EA" stroke-linejoin="miter" stroke-miterlimit="10">
-        <path d="M 93.72,171.73 A 72,72 0 1 1 106.28,171.73" stroke-width="10"/>
-        <polygon points="100,52 109.4,87.06 140.9,86.71 116.17,105.25 125.27,134.79 100,117 74.73,134.79 83.83,105.25 59.1,86.71 90.6,87.06" stroke-width="8"/>
-      </g>
-      <path d="M 100,74 L 104,114 L 100,178 L 96,114 Z" fill="#C1372F"/>
-    </svg>
-    <div class="word">Preflight Vets<s>verified before it flies</s></div>
+    <img class="mark" src="preflight-logo-dark.png" width="584" height="629"
+         alt="Preflight Vets">
+    <div class="word">Preflight Vets<s>verified before it&rsquo;s posted</s></div>
   </header>
 
-  <h1>What's open<br>right now, <em>checked.</em></h1>
+  <div class="hero">
+    <div>
+      <h1>What's open<br>right now, <em>checked.</em></h1>
+    </div>
+    <div>
+      <p class="lede">Scholarships, hiring events, free certifications and training open to the
+      military community. Half the posts about them carry the wrong date, a dead link, or leave out
+      who actually qualifies. <b>Everything here was confirmed against the organizer's own page
+      first.</b></p>
+      <p class="stamp" id="stamp">// loading</p>
+    </div>
+  </div>
 
-  <p class="lede">Scholarships, hiring events, free certifications and training open to the military
-  community. Half the posts about them carry the wrong date, a dead link, or leave out who actually
-  qualifies. <b>Everything here was confirmed against the organizer's own page first.</b></p>
-
-  <p class="stamp" id="stamp">// loading</p>
-
-  <h2 id="openHead">Open now</h2>
+  <div class="sec">
+    <h2 id="openHead">Open now</h2>
+    <span class="rope" aria-hidden="true"></span>
+  </div>
   <div class="list" id="open">
     <div class="note">Checking what's current…</div>
   </div>
 
   <div id="closedBlock" hidden>
-    <h2>Recently closed</h2>
+    <div class="sec">
+      <h2>Recently closed</h2>
+      <span class="rope" aria-hidden="true"></span>
+    </div>
     <div class="list" id="closed"></div>
   </div>
 
-  <h2>What "verified" means</h2>
+  <div class="sec">
+    <h2>What "verified" means</h2>
+    <span class="rope" aria-hidden="true"></span>
+  </div>
   <div class="check">
     <ul>
-      <li><code>[x]</code><span>Date and time confirmed against the organizer's own page</span></li>
-      <li><code>[x]</code><span>Registration link opened and tested, not copied off a graphic</span></li>
-      <li><code>[x]</code><span>Eligibility read in full, including the small print</span></li>
-      <li><code>[x]</code><span>Cost stated, exam fees included</span></li>
-      <li><code>[x]</code><span>If I can't confirm something, I say so instead of guessing</span></li>
+      <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12.5 L9 18.5 L21 5" fill="none" stroke="#9E2A24" stroke-width="3.4" stroke-linecap="square"/></svg><span>Date and time confirmed against the organizer's own page</span></li>
+      <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12.5 L9 18.5 L21 5" fill="none" stroke="#9E2A24" stroke-width="3.4" stroke-linecap="square"/></svg><span>Registration link opened and tested, not copied off a graphic</span></li>
+      <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12.5 L9 18.5 L21 5" fill="none" stroke="#9E2A24" stroke-width="3.4" stroke-linecap="square"/></svg><span>Eligibility read in full, including the small print</span></li>
+      <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12.5 L9 18.5 L21 5" fill="none" stroke="#9E2A24" stroke-width="3.4" stroke-linecap="square"/></svg><span>Cost stated, exam fees included</span></li>
+      <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12.5 L9 18.5 L21 5" fill="none" stroke="#9E2A24" stroke-width="3.4" stroke-linecap="square"/></svg><span>If I can't confirm something, I say so instead of guessing</span></li>
     </ul>
     <p class="sig">// fifteen years as an aviation QA inspector. the habit transfers.</p>
   </div>
@@ -137,6 +199,7 @@ footer .sp{flex-grow:1}
     <span class="sp"></span>
     <a href="https://www.linkedin.com/in/roberto-natera/">New items post first on LinkedIn</a>
   </footer>
+
 </div>
 
 <script>
@@ -149,6 +212,29 @@ footer .sp{flex-grow:1}
   var closedList = document.getElementById('closed');
   var closedBlock = document.getElementById('closedBlock');
   var stamp = document.getElementById('stamp');
+
+  // rope-twist dividers, drawn to whatever width the section head leaves
+  (function drawRopes() {
+    var NS = 'http://www.w3.org/2000/svg';
+    [].forEach.call(document.querySelectorAll('.rope'), function (slot) {
+      var width = slot.clientWidth || 300;
+      if (width < 90) { slot.style.display = 'none'; return; }
+      var svg = document.createElementNS(NS, 'svg');
+      svg.setAttribute('viewBox', '0 0 ' + width + ' 26');
+      svg.setAttribute('preserveAspectRatio', 'none');
+      var d = '', x = 0;
+      while (x < width) { d += 'M' + x + ' 13 q7 -11 14 0 q7 11 14 0 '; x += 28; }
+      var path = document.createElementNS(NS, 'path');
+      path.setAttribute('d', d);
+      path.setAttribute('fill', 'none');
+      path.setAttribute('stroke', '#241F1C');
+      path.setAttribute('stroke-width', '3');
+      path.setAttribute('stroke-linecap', 'round');
+      svg.appendChild(path);
+      slot.textContent = '';
+      slot.appendChild(svg);
+    });
+  })();
 
   function el(tag, cls, text) {
     var node = document.createElement(tag);
@@ -182,7 +268,9 @@ footer .sp{flex-grow:1}
 
   function buildEntry(item, daysLeft) {
     var card = el('article', 'entry' + (daysLeft !== null && daysLeft < 0 ? ' shut' : ''));
-    card.appendChild(pillFor(daysLeft));
+    var top = el('div');
+    top.appendChild(pillFor(daysLeft));
+    card.appendChild(top);
     card.appendChild(el('div', 'org', item.org || 'Untitled'));
     if (item.what) card.appendChild(el('div', 'what', item.what));
 
@@ -197,7 +285,7 @@ footer .sp{flex-grow:1}
     }
 
     if (item.link) {
-      var link = el('a', 'go', item.linkLabel || item.link);
+      var link = el('a', 'go', item.linkLabel || 'Open the source');
       link.href = item.link;
       link.rel = 'noopener';
       card.appendChild(link);
@@ -262,3 +350,5 @@ footer .sp{flex-grow:1}
     });
 })();
 </script>
+</body>
+</html>
