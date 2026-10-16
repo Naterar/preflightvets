@@ -1,0 +1,264 @@
+<title>Preflight Vets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one column. Entries come from data.json, sort by deadline, and move
+   themselves to "Recently closed" once the date passes. Committed dark navy. */
+:root{
+  color-scheme: dark;
+  --navy:#0D1B33;
+  --navy-2:#16294A;
+  --line:#22375A;
+  --ivory:#F4F1EA;
+  --muted:#8FA7C9;
+  --dim:#64799B;
+  --red:#C1372F;
+  --blue:#3A6EA5;
+  --amber:#D99A2B;
+  --display:'Oswald','Arial Narrow',sans-serif;
+  --body:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--navy);color:var(--ivory);font-family:var(--body);
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.stripe{display:flex;height:8px}
+.stripe i{flex:1}
+.wrap{max-width:720px;margin:0 auto;padding-inline:20px;padding-block:0 66px}
+
+header{display:flex;align-items:center;gap:14px;padding-block:28px 0}
+header svg{width:42px;height:42px;flex-shrink:0}
+.word{font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:.5px;
+  text-transform:uppercase;line-height:1}
+.word s{text-decoration:none;display:block;font-family:var(--mono);font-size:11px;
+  font-weight:400;letter-spacing:2.3px;color:var(--dim);text-transform:uppercase;margin-top:5px}
+
+h1{font-family:var(--display);font-weight:700;text-transform:uppercase;
+  font-size:clamp(34px,7.6vw,56px);line-height:1;letter-spacing:-.5px;margin:38px 0 0;
+  text-wrap:balance}
+h1 em{font-style:normal;color:var(--red)}
+.lede{font-size:18px;color:var(--muted);margin:18px 0 0;max-width:58ch}
+.lede b{color:var(--ivory);font-weight:600}
+.stamp{margin:20px 0 0;font-family:var(--mono);font-size:13px;color:var(--dim)}
+
+h2{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:2.4px;
+  text-transform:uppercase;color:var(--blue);margin:44px 0 16px;padding-bottom:11px;
+  border-bottom:1px solid var(--line)}
+
+.list{display:flex;flex-direction:column;gap:16px}
+.entry{background:var(--navy-2);border:1px solid var(--line);border-radius:9px;padding:22px 23px}
+.entry.shut{opacity:.6}
+.entry .org{font-family:var(--display);font-weight:700;font-size:27px;text-transform:uppercase;
+  line-height:1.05;letter-spacing:.2px}
+.entry .what{color:var(--muted);font-size:16px;margin-top:6px}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:7px 16px;margin-top:17px;font-size:15px}
+.facts dt{font-family:var(--mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--dim);padding-top:3px}
+.facts dd{margin:0}
+.go{display:inline-block;margin-top:18px;font-family:var(--mono);font-size:15px;
+  color:var(--ivory);background:var(--navy);border:1px solid var(--blue);border-radius:6px;
+  padding:10px 15px;text-decoration:none;word-break:break-all}
+.go:hover{border-color:var(--ivory)}
+.go:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.pill{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:1.4px;
+  text-transform:uppercase;padding:5px 10px;border-radius:5px;margin-bottom:12px;
+  background:rgba(217,154,43,.14);color:var(--amber);border:1px solid rgba(217,154,43,.4)}
+.pill.closed{background:rgba(100,121,155,.14);color:var(--dim);border-color:var(--line)}
+.pill.soon{background:rgba(193,55,47,.16);color:#F08A84;border-color:rgba(193,55,47,.5)}
+.pill.open{background:rgba(58,110,165,.16);color:#8FBBE8;border-color:rgba(58,110,165,.5)}
+
+.note{border:1px dashed var(--line);border-radius:9px;padding:22px 23px;color:var(--muted);
+  font-size:16px}
+
+.check{background:var(--navy-2);border-left:5px solid var(--blue);border-radius:0 8px 8px 0;
+  padding:22px 24px}
+.check ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.check li{display:grid;grid-template-columns:auto 1fr;gap:12px;font-size:16px}
+.check code{font-family:var(--mono);font-size:13px;color:var(--blue);padding-top:2px}
+.sig{margin:18px 0 0;font-family:var(--mono);font-size:13px;color:var(--dim)}
+
+footer{margin-top:50px;padding-top:22px;border-top:1px solid var(--line);
+  display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--dim)}
+footer a{color:var(--muted)}
+footer .sp{flex-grow:1}
+</style>
+
+<div class="stripe">
+  <i style="background:#C1372F"></i><i style="background:#F4F1EA"></i>
+  <i style="background:#C1372F"></i><i style="background:#F4F1EA"></i>
+  <i style="background:#C1372F"></i>
+</div>
+
+<div class="wrap">
+  <header>
+    <svg viewBox="0 0 200 200" role="img" aria-label="Preflight Vets">
+      <g fill="none" stroke="#F4F1EA" stroke-linejoin="miter" stroke-miterlimit="10">
+        <path d="M 93.72,171.73 A 72,72 0 1 1 106.28,171.73" stroke-width="10"/>
+        <polygon points="100,52 109.4,87.06 140.9,86.71 116.17,105.25 125.27,134.79 100,117 74.73,134.79 83.83,105.25 59.1,86.71 90.6,87.06" stroke-width="8"/>
+      </g>
+      <path d="M 100,74 L 104,114 L 100,178 L 96,114 Z" fill="#C1372F"/>
+    </svg>
+    <div class="word">Preflight Vets<s>verified before it flies</s></div>
+  </header>
+
+  <h1>What's open<br>right now, <em>checked.</em></h1>
+
+  <p class="lede">Scholarships, hiring events, free certifications and training open to the military
+  community. Half the posts about them carry the wrong date, a dead link, or leave out who actually
+  qualifies. <b>Everything here was confirmed against the organizer's own page first.</b></p>
+
+  <p class="stamp" id="stamp">// loading</p>
+
+  <h2 id="openHead">Open now</h2>
+  <div class="list" id="open">
+    <div class="note">Checking what's current…</div>
+  </div>
+
+  <div id="closedBlock" hidden>
+    <h2>Recently closed</h2>
+    <div class="list" id="closed"></div>
+  </div>
+
+  <h2>What "verified" means</h2>
+  <div class="check">
+    <ul>
+      <li><code>[x]</code><span>Date and time confirmed against the organizer's own page</span></li>
+      <li><code>[x]</code><span>Registration link opened and tested, not copied off a graphic</span></li>
+      <li><code>[x]</code><span>Eligibility read in full, including the small print</span></li>
+      <li><code>[x]</code><span>Cost stated, exam fees included</span></li>
+      <li><code>[x]</code><span>If I can't confirm something, I say so instead of guessing</span></li>
+    </ul>
+    <p class="sig">// fifteen years as an aviation QA inspector. the habit transfers.</p>
+  </div>
+
+  <footer>
+    <span>Preflight Vets</span>
+    <span class="sp"></span>
+    <a href="https://www.linkedin.com/in/roberto-natera/">New items post first on LinkedIn</a>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var MS_DAY = 86400000;
+  var MONTHS = ['January','February','March','April','May','June',
+                'July','August','September','October','November','December'];
+
+  var openList = document.getElementById('open');
+  var closedList = document.getElementById('closed');
+  var closedBlock = document.getElementById('closedBlock');
+  var stamp = document.getElementById('stamp');
+
+  function el(tag, cls, text) {
+    var node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text != null) node.textContent = text;
+    return node;
+  }
+
+  function parseDay(value) {
+    if (!value) return null;
+    var bits = String(value).split('-');
+    if (bits.length !== 3) return null;
+    var date = new Date(+bits[0], +bits[1] - 1, +bits[2]);
+    return isNaN(date) ? null : date;
+  }
+
+  function prettyDay(date) {
+    return date.getDate() + ' ' + MONTHS[date.getMonth()] + ' ' + date.getFullYear();
+  }
+
+  function pillFor(daysLeft) {
+    var pill = el('span', 'pill');
+    if (daysLeft === null) { pill.className = 'pill open'; pill.textContent = 'Open'; }
+    else if (daysLeft < 0) { pill.className = 'pill closed'; pill.textContent = 'Closed'; }
+    else if (daysLeft === 0) { pill.className = 'pill soon'; pill.textContent = 'Today'; }
+    else if (daysLeft === 1) { pill.className = 'pill soon'; pill.textContent = 'Tomorrow'; }
+    else if (daysLeft <= 7) { pill.className = 'pill soon'; pill.textContent = daysLeft + ' days left'; }
+    else { pill.textContent = daysLeft + ' days left'; }
+    return pill;
+  }
+
+  function buildEntry(item, daysLeft) {
+    var card = el('article', 'entry' + (daysLeft !== null && daysLeft < 0 ? ' shut' : ''));
+    card.appendChild(pillFor(daysLeft));
+    card.appendChild(el('div', 'org', item.org || 'Untitled'));
+    if (item.what) card.appendChild(el('div', 'what', item.what));
+
+    if (Array.isArray(item.facts) && item.facts.length) {
+      var facts = el('dl', 'facts');
+      item.facts.forEach(function (pair) {
+        if (!Array.isArray(pair) || pair.length < 2) return;
+        facts.appendChild(el('dt', null, pair[0]));
+        facts.appendChild(el('dd', null, pair[1]));
+      });
+      card.appendChild(facts);
+    }
+
+    if (item.link) {
+      var link = el('a', 'go', item.linkLabel || item.link);
+      link.href = item.link;
+      link.rel = 'noopener';
+      card.appendChild(link);
+    }
+    return card;
+  }
+
+  function render(data) {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    var checked = parseDay(data.lastChecked);
+    stamp.textContent = checked
+      ? '// last checked: ' + prettyDay(checked)
+      : '// last checked: not recorded';
+
+    var items = Array.isArray(data.entries) ? data.entries.slice() : [];
+    var open = [], shut = [];
+
+    items.forEach(function (item) {
+      var due = parseDay(item.deadline);
+      var daysLeft = due ? Math.round((due - today) / MS_DAY) : null;
+      (daysLeft !== null && daysLeft < 0 ? shut : open).push({ item: item, daysLeft: daysLeft });
+    });
+
+    // soonest deadline first; undated programs after the dated ones
+    open.sort(function (a, b) {
+      if (a.daysLeft === null) return b.daysLeft === null ? 0 : 1;
+      if (b.daysLeft === null) return -1;
+      return a.daysLeft - b.daysLeft;
+    });
+    shut.sort(function (a, b) { return b.daysLeft - a.daysLeft; });
+
+    openList.textContent = '';
+    if (open.length) {
+      open.forEach(function (row) { openList.appendChild(buildEntry(row.item, row.daysLeft)); });
+    } else {
+      openList.appendChild(el('div', 'note',
+        'Nothing confirmed as open at the moment. New items post first on LinkedIn and land here once checked.'));
+    }
+
+    if (shut.length) {
+      closedBlock.hidden = false;
+      closedList.textContent = '';
+      shut.slice(0, 3).forEach(function (row) {
+        closedList.appendChild(buildEntry(row.item, row.daysLeft));
+      });
+    }
+  }
+
+  fetch('data.json', { cache: 'no-store' })
+    .then(function (response) {
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      return response.json();
+    })
+    .then(render)
+    .catch(function () {
+      stamp.textContent = '// list unavailable';
+      openList.textContent = '';
+      openList.appendChild(el('div', 'note',
+        "The list couldn't load just now. Current items are always posted on LinkedIn first — the link is at the bottom of this page."));
+    });
+})();
+</script>

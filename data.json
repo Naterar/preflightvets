@@ -1,0 +1,38 @@
+{
+  "_howToUpdate": "Edit this file only — never index.html. Add a new block to 'entries'. 'deadline' is the last day it is useful (YYYY-MM-DD); leave it as null for programs with no closing date. Anything past its deadline moves itself to 'Recently closed' automatically, so a stale entry can never show as open. Update 'lastChecked' every time you touch this file.",
+
+  "lastChecked": "2026-10-11",
+
+  "entries": [
+    {
+      "org": "Boots to Books × CompTIA",
+      "what": "Explore Pathways to Cyber Careers — a live session on how certifications map to actual cyber roles, and what to build alongside them.",
+      "deadline": "2026-10-23",
+      "facts": [
+        ["When", "Friday, 23 October 2026 · 12:00–1:30 PM Pacific / 3:00–4:30 PM Eastern"],
+        ["Where", "Virtual"],
+        ["Speaker", "Dr. James Stanger, Chief Technology Evangelist, CompTIA"],
+        ["Who", "Veterans, active duty, Guard and Reserve, military spouses and military families"],
+        ["Cost", "Free. Five attendees receive a CompTIA certification voucher."]
+      ],
+      "link": "https://boots2books.com/comptiaevent",
+      "linkLabel": "boots2books.com/comptiaevent"
+    },
+
+    {
+      "org": "Military Lifetime Pass",
+      "what": "A free lifetime America the Beautiful pass covering entrance and standard day-use fees at federal recreation sites. No VA disability rating required, and no closing date.",
+      "deadline": null,
+      "facts": [
+        ["Who", "Veterans of any branch, including National Guard and Reserve, plus Gold Star Family members"],
+        ["Covers", "National Park Service, Forest Service, Fish & Wildlife Service, Bureau of Land Management, Bureau of Reclamation and Army Corps of Engineers sites"],
+        ["Admits", "The holder plus occupants of one private non-commercial vehicle, or two motorcycles. Where fees are per person, the holder plus three others aged 16 and over."],
+        ["ID accepted", "Veteran Health Identification Card, the VA's digital Veteran ID Card, DD Form 2, DD Form 2765, Next Generation USID, or a veteran designation on a state driver's licence or ID card"],
+        ["Cost", "Free in person at many federal recreation sites. Free as a digital pass on Recreation.gov; $7.50 for a physical card posted to you, or $10 by mail from the USGS Store."],
+        ["Also", "A separate free Access Pass exists for any US citizen or resident with a permanent disability, and can discount expanded amenities such as camping and guided tours."]
+      ],
+      "link": "https://www.nps.gov/planyourvisit/veterans-and-gold-star-families-free-access.htm",
+      "linkLabel": "nps.gov — veterans and Gold Star families free access"
+    }
+  ]
+}
