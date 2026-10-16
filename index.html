@@ -122,6 +122,11 @@ h1 em{font-style:normal;color:var(--red)}
 .pill.closed{color:var(--dim);border-color:var(--rule);background:transparent}
 .pill.soon{color:var(--cream);background:var(--red);border-color:var(--red)}
 .pill.open{color:var(--navy);background:var(--cream);border-color:var(--navy)}
+.pill.later{color:var(--tan);background:transparent;border-color:var(--tan)}
+
+.fresh{margin-top:16px;padding-top:12px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:12px;color:var(--dim);letter-spacing:.2px}
+.fresh.stale{color:var(--red)}
 
 .note{border:2px dashed var(--rule);padding:24px 25px;color:var(--ink);opacity:.8}
 
@@ -181,6 +186,14 @@ footer .sp{flex-grow:1}
     <div class="note">Checking what's current…</div>
   </div>
 
+  <div id="laterBlock" hidden>
+    <div class="sec">
+      <h2>Opens later</h2>
+      <span class="rope" aria-hidden="true"></span>
+    </div>
+    <div class="list" id="later"></div>
+  </div>
+
   <div id="closedBlock" hidden>
     <div class="sec">
       <h2>Recently closed</h2>
@@ -221,6 +234,8 @@ footer .sp{flex-grow:1}
   var openList = document.getElementById('open');
   var closedList = document.getElementById('closed');
   var closedBlock = document.getElementById('closedBlock');
+  var laterList = document.getElementById('later');
+  var laterBlock = document.getElementById('laterBlock');
   var stamp = document.getElementById('stamp');
 
   // rope-twist dividers, drawn to whatever width the section head leaves
@@ -265,9 +280,10 @@ footer .sp{flex-grow:1}
     return date.getDate() + ' ' + MONTHS[date.getMonth()] + ' ' + date.getFullYear();
   }
 
-  function pillFor(daysLeft) {
+  function pillFor(daysLeft, opensIn) {
     var pill = el('span', 'pill');
-    if (daysLeft === null) { pill.className = 'pill open'; pill.textContent = 'Open'; }
+    if (opensIn != null) { pill.className = 'pill later'; pill.textContent = 'Opens ' + opensIn; }
+    else if (daysLeft === null) { pill.className = 'pill open'; pill.textContent = 'Open'; }
     else if (daysLeft < 0) { pill.className = 'pill closed'; pill.textContent = 'Closed'; }
     else if (daysLeft === 0) { pill.className = 'pill soon'; pill.textContent = 'Today'; }
     else if (daysLeft === 1) { pill.className = 'pill soon'; pill.textContent = 'Tomorrow'; }
@@ -276,10 +292,23 @@ footer .sp{flex-grow:1}
     return pill;
   }
 
-  function buildEntry(item, daysLeft) {
+  // "checked N days ago" — per entry, so one stale item can't speak for the page
+  function freshness(item, today) {
+    var when = parseDay(item.checked);
+    if (!when) return null;
+    var days = Math.round((today - when) / MS_DAY);
+    var text = days <= 0 ? 'checked today'
+             : days === 1 ? 'checked yesterday'
+             : 'checked ' + days + ' days ago';
+    var node = el('div', 'fresh' + (days > 30 ? ' stale' : ''), '// ' + text);
+    node.title = 'Confirmed against the source on ' + prettyDay(when);
+    return node;
+  }
+
+  function buildEntry(item, daysLeft, opensIn, today) {
     var card = el('article', 'entry' + (daysLeft !== null && daysLeft < 0 ? ' shut' : ''));
     var top = el('div');
-    top.appendChild(pillFor(daysLeft));
+    top.appendChild(pillFor(daysLeft, opensIn));
     card.appendChild(top);
     card.appendChild(el('div', 'org', item.org || 'Untitled'));
     if (item.what) card.appendChild(el('div', 'what', item.what));
@@ -300,6 +329,8 @@ footer .sp{flex-grow:1}
       link.rel = 'noopener';
       card.appendChild(link);
     }
+    var fresh = freshness(item, today);
+    if (fresh) card.appendChild(fresh);
     return card;
   }
 
@@ -307,19 +338,37 @@ footer .sp{flex-grow:1}
     var today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    var checked = parseDay(data.lastChecked);
-    stamp.textContent = checked
-      ? '// last checked: ' + prettyDay(checked)
-      : '// last checked: not recorded';
-
     var items = Array.isArray(data.entries) ? data.entries.slice() : [];
-    var open = [], shut = [];
+    var open = [], shut = [], later = [], checkDates = [];
 
     items.forEach(function (item) {
+      var when = parseDay(item.checked);
+      if (when) checkDates.push(when);
+
+      var starts = parseDay(item.opens);
+      if (starts && starts > today) {
+        later.push({ item: item, starts: starts,
+          opensIn: starts.getDate() + ' ' + MONTHS[starts.getMonth()].slice(0, 3) });
+        return;
+      }
       var due = parseDay(item.deadline);
       var daysLeft = due ? Math.round((due - today) / MS_DAY) : null;
       (daysLeft !== null && daysLeft < 0 ? shut : open).push({ item: item, daysLeft: daysLeft });
     });
+
+    // the stamp reports the OLDEST check on the page, not a hand-typed date —
+    // it can only ever overstate how stale things are, never understate it
+    if (checkDates.length === items.length && items.length) {
+      var oldest = new Date(Math.min.apply(null, checkDates));
+      var age = Math.round((today - oldest) / MS_DAY);
+      stamp.textContent = age <= 0 ? '// every item re-checked today'
+        : age === 1 ? '// every item re-checked within the last day'
+        : '// every item re-checked within the last ' + age + ' days';
+    } else if (checkDates.length) {
+      stamp.textContent = '// some items have no recorded check date';
+    } else {
+      stamp.textContent = '// no check dates recorded';
+    }
 
     // soonest deadline first; undated programs after the dated ones
     open.sort(function (a, b) {
@@ -329,19 +378,31 @@ footer .sp{flex-grow:1}
     });
     shut.sort(function (a, b) { return b.daysLeft - a.daysLeft; });
 
+    later.sort(function (a, b) { return a.starts - b.starts; });
+
     openList.textContent = '';
     if (open.length) {
-      open.forEach(function (row) { openList.appendChild(buildEntry(row.item, row.daysLeft)); });
+      open.forEach(function (row) {
+        openList.appendChild(buildEntry(row.item, row.daysLeft, null, today));
+      });
     } else {
       openList.appendChild(el('div', 'note',
         'Nothing confirmed as open at the moment. New items post first on LinkedIn and land here once checked.'));
+    }
+
+    if (later.length) {
+      laterBlock.hidden = false;
+      laterList.textContent = '';
+      later.forEach(function (row) {
+        laterList.appendChild(buildEntry(row.item, null, row.opensIn, today));
+      });
     }
 
     if (shut.length) {
       closedBlock.hidden = false;
       closedList.textContent = '';
       shut.slice(0, 3).forEach(function (row) {
-        closedList.appendChild(buildEntry(row.item, row.daysLeft));
+        closedList.appendChild(buildEntry(row.item, row.daysLeft, null, today));
       });
     }
   }
