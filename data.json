@@ -1,12 +1,29 @@
 {
-  "_howToUpdate": "Edit this file only — never index.html. Add a new block to 'entries'. 'deadline' is the last day it is useful (YYYY-MM-DD); leave it as null for programs with no closing date. Anything past its deadline moves itself to 'Recently closed' automatically, so a stale entry can never show as open. Update 'lastChecked' every time you touch this file.",
-
-  "lastChecked": "2026-10-11",
+  "_howToUpdate": "Edit this file only — never index.html. Each entry carries its own 'checked' date (YYYY-MM-DD): the day YOU last opened the organizer's own page and confirmed it. Re-check an entry, update its 'checked'. The page prints the OLDEST check across all entries, so it can only overstate staleness, never understate it. An entry past 30 days shows its age in red — that is the nudge to re-check or remove it. 'deadline' is the last day it is useful; null for programs with no closing date. 'opens' is for programs whose window has not started yet — they sit in 'Opens later' and move themselves into 'Open now' on that date. Anything past its deadline moves itself to 'Recently closed' automatically.",
 
   "entries": [
     {
+      "org": "EM 385-1-1 — USACE Safety & Health",
+      "what": "The 40-hour Army Corps of Engineers Safety and Health Requirements course, live on Zoom. Stricter than OSHA in places that matter: lower fall-protection triggers, formal Activity Hazard Analyses, submittal steps OSHA never asks for.",
+      "checked": "2026-10-16",
+      "deadline": "2026-10-19",
+      "facts": [
+        ["When", "Monday 19 – Friday 23 October 2026 · 8:00 AM – 4:30 PM Pacific daily"],
+        ["Where", "Live instructor-led on Zoom"],
+        ["Cost", "$350 per student"],
+        ["Who", "Open to everyone — veterans, active duty, contractors, civilians"],
+        ["Taught by", "Tri-County Career Academy"],
+        ["Be clear", "This course does not by itself make you a Site Safety and Health Officer. EM 385-1-1 requires an SSHO to have five years of consecutive construction safety supervision (four with CHST, CSP, ASP or OHST), an OSHA 30 card, and eight hours of documented CE a year. The 40-hour course is not named in the manual as an SSHO qualification — it became a de facto standard because contracts started requiring it."],
+        ["Ask first", "If you have VR&E, WIOA or state workforce funding, ask whether this course qualifies before you put $350 on a card."]
+      ],
+      "link": "https://www.eventzilla.net/o/tricountycareeracademy",
+      "linkLabel": "eventzilla.net — tri-county career academy"
+    },
+
+    {
       "org": "Boots to Books × CompTIA",
       "what": "Explore Pathways to Cyber Careers — a live session on how certifications map to actual cyber roles, and what to build alongside them.",
+      "checked": "2026-10-16",
       "deadline": "2026-10-23",
       "facts": [
         ["When", "Friday, 23 October 2026 · 12:00–1:30 PM Pacific / 3:00–4:30 PM Eastern"],
@@ -20,8 +37,90 @@
     },
 
     {
+      "org": "OSHA 30 — Construction Safety",
+      "what": "The 30-hour OSHA Construction card, live on Zoom across two weekends. If you are building toward an SSHO role, this is the one actually named in the EM 385-1-1 requirement — take it before the 40-hour course, not after.",
+      "checked": "2026-10-16",
+      "deadline": "2026-10-24",
+      "facts": [
+        ["When", "Saturday 24 – Sunday 25 October, then Saturday 31 October – Sunday 1 November 2026 · from 8:00 AM"],
+        ["Where", "Live instructor-led on Zoom"],
+        ["Cost", "$250 per student"],
+        ["Taught by", "Tri-County Career Academy"],
+        ["Next one", "A second Construction run goes 16–19 November 2026, and an OSHA 30 General Industry run goes 14–15 and 21–22 November — both $250, same organizer."]
+      ],
+      "link": "https://www.eventzilla.net/o/tricountycareeracademy",
+      "linkLabel": "eventzilla.net — tri-county career academy"
+    },
+
+    {
+      "org": "Cleared Job Fair — Herndon, VA",
+      "what": "An in-person hiring event for cleared professionals, run by ClearedJobs.Net.",
+      "checked": "2026-10-16",
+      "deadline": "2026-10-29",
+      "facts": [
+        ["When", "Thursday, 29 October 2026 · 2:00–5:30 PM Eastern"],
+        ["Where", "Hyatt Regency, 2300 Dulles Corner Boulevard, Herndon, VA"],
+        ["Clearance", "This is a CI or FS polygraph event. Without one of those you will not get in the door — check the event page before you drive."],
+        ["Bring", "Printed résumés and your clearance details. Dress as you would for an interview; these are real interviews, not a meet-and-greet."],
+        ["Cost", "Free to job seekers"]
+      ],
+      "link": "https://clearedjobs.net/events",
+      "linkLabel": "clearedjobs.net/events"
+    },
+
+    {
+      "org": "Cleared Job Fair — Hanover, MD",
+      "what": "The next ClearedJobs.Net cleared hiring event after Herndon, same format.",
+      "checked": "2026-10-16",
+      "deadline": "2026-11-12",
+      "facts": [
+        ["When", "Thursday, 12 November 2026 · 2:00–5:30 PM Eastern"],
+        ["Where", "The Hotel, 7795 Arundel Mills Blvd, Hanover, MD"],
+        ["Clearance", "CI or FS polygraph event, same as Herndon."],
+        ["Cost", "Free to job seekers"]
+      ],
+      "link": "https://clearedjobs.net/events",
+      "linkLabel": "clearedjobs.net/events"
+    },
+
+    {
+      "org": "Tutor.com for U.S. Military Families",
+      "what": "No-cost, live, one-to-one online tutoring and homework help, funded by the Department of Defense. 24/7, more than 150 subjects, kindergarten through college.",
+      "checked": "2026-10-16",
+      "deadline": null,
+      "facts": [
+        ["Who", "Army, Navy, Air Force, Marine Corps, Space Force, Coast Guard and DoD civilians — active duty, Reserve and National Guard including part-time drilling status, plus Survivor and Wounded Warrior. Dependants qualify when the service member is in a qualifying status."],
+        ["Covers", "Homework help in math, science, reading and writing; live essay review; SAT and ACT prep; study skills; parent coaching"],
+        ["Bilingual", "Spanish-language help in math, science, social studies, writing and study skills — and Spanish parent coaching, for the adult sitting next to the kid doing the homework"],
+        ["Cost", "Free to eligible users. No appointment, no waiting list, any internet-connected device."],
+        ["Be clear", "Veterans are not named as an eligible status on their own, and former DoD civilians who no longer work for DoD are specifically not eligible. If you have separated, read the eligibility table before you plan around this."],
+        ["Also", "Tutor.com states the program depends on available budget and is not guaranteed — funders set eligibility and it can change."]
+      ],
+      "link": "https://military.tutor.com/eligibility",
+      "linkLabel": "military.tutor.com/eligibility"
+    },
+
+    {
+      "org": "Salesforce Military",
+      "what": "Free self-paced Salesforce and AI training on Trailhead, plus certification exam vouchers that cover the roughly $200 exam fee.",
+      "checked": "2026-10-16",
+      "deadline": null,
+      "facts": [
+        ["Who", "Current and transitioning service members, their spouses, and veterans of all eras who served in the US, Canada, UK, Australia or New Zealand. Gold Star Children in the US were added recently. Guard and Reserve are not named in the eligibility wording — ask the program before you plan around it."],
+        ["Covers", "Self-paced Trailhead training, optional virtual Trailhead Academy classes with fees waived, and 1:1 career coaching through non-profit partners"],
+        ["Vouchers", "A certification exam voucher, plus one retake voucher per certification on request"],
+        ["After certifying", "You can apply for the Hiring Our Heroes 12-week fellowship and get guaranteed interviews through the Salesforce Talent Alliance"],
+        ["Cost", "Free. No enrolment deadline."],
+        ["Watch the clock", "Class registration must be completed within 7 days of approval, exam vouchers expire, and exam accommodation requests need 30 days' notice."]
+      ],
+      "link": "https://trailhead.salesforce.com/salesforce-military",
+      "linkLabel": "trailhead.salesforce.com/salesforce-military"
+    },
+
+    {
       "org": "Military Lifetime Pass",
       "what": "A free lifetime America the Beautiful pass covering entrance and standard day-use fees at federal recreation sites. No VA disability rating required, and no closing date.",
+      "checked": "2026-10-16",
       "deadline": null,
       "facts": [
         ["Who", "Veterans of any branch, including National Guard and Reserve, plus Gold Star Family members"],
@@ -33,6 +132,40 @@
       ],
       "link": "https://www.nps.gov/planyourvisit/veterans-and-gold-star-families-free-access.htm",
       "linkLabel": "nps.gov — veterans and Gold Star families free access"
+    },
+
+    {
+      "org": "LinkedIn Premium — free year",
+      "what": "A one-time free year of LinkedIn Premium for the military community. Worth knowing before you chase it: as of this check the programme is being restructured, and LinkedIn's own page no longer describes a direct way to claim it.",
+      "checked": "2026-10-16",
+      "deadline": null,
+      "facts": [
+        ["Status", "LinkedIn's page says the programme is being updated to distribute subscriptions through selected non-profit partners, and tells people to check back. There is no self-serve claim path described on it right now."],
+        ["Who", "Eligible US service members and veterans, and their spouses, as LinkedIn determines. You must also be enrolled in an approved career training programme and hold no Premium subscription when you redeem."],
+        ["What you get", "Twelve months of Job Seeker Career Premium, one time, running from the day you redeem it"],
+        ["Does it auto-renew", "No. LinkedIn states that after the one-year promotional period the subscription terminates — you will not be billed at full rate when it ends. Several third-party write-ups claim otherwise; LinkedIn's own page is the one to trust."],
+        ["Verification", "Handled by SheerID or Onfido"]
+      ],
+      "link": "https://socialimpact.linkedin.com/programs/veterans/premiumform",
+      "linkLabel": "socialimpact.linkedin.com — veterans programme"
+    },
+
+    {
+      "org": "Think GREAT Foundation — Military Spouse Scholarship",
+      "what": "An academic scholarship for military and veteran spouses. The window has not opened yet — this is here so you can get documents together before January, not so you can apply today.",
+      "checked": "2026-10-16",
+      "opens": "2027-01-01",
+      "deadline": "2027-02-28",
+      "facts": [
+        ["Window", "Applications accepted 1 January – 28 February"],
+        ["Who", "Spouses of US service members and veterans, married to them during the service member's service"],
+        ["Enrolment", "Enrolled or planning to enrol at a community college, college or university accredited by the US Department of Education, or in a certificate, licensure or technical programme"],
+        ["Award", "$2,500 per academic year, with a $10,000 lifetime maximum per applicant"],
+        ["How it pays", "Funds go directly to the financial institution and cannot exceed the actual unmet need on your student account. Anything left over is retained by the foundation and may be applied to another semester in the same academic year."],
+        ["To keep it", "Maintain a 3.0 GPA and satisfactory progress toward the degree"]
+      ],
+      "link": "https://apply.mykaleidoscope.com/program/thinkGREAT2025",
+      "linkLabel": "apply.mykaleidoscope.com — think great foundation"
     }
   ]
 }
