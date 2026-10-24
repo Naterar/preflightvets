@@ -555,6 +555,44 @@
       ],
       "link": "https://hiddenheroes.org/get-help/hopefund",
       "linkLabel": "hiddenheroes.org/get-help/hopefund"
+    },
+    {
+      "org": "ACT Now Education — Weekly Rundown: Nondestructive Testing",
+      "what": "A free virtual session on Nondestructive Testing — finding cracks and flaws inside aircraft, bridges, pipelines and reactors without cutting anything open. Covers what the field is, who is hiring, the training ladder, and how military inspection experience transfers.",
+      "checked": "2026-10-24",
+      "deadline": "2026-10-24",
+      "facts": [
+        [
+          "When",
+          "Saturday, 24 October 2026 · 1:00 PM Eastern · 12:00 Central · 11:00 Mountain · 10:00 Pacific"
+        ],
+        [
+          "Where",
+          "Virtual. Free."
+        ],
+        [
+          "Who",
+          "Veterans, transitioning service members and military spouses"
+        ],
+        [
+          "Why it transfers",
+          "If you held an NDI billet, worked QA, or signed off inspections in any service, you have already done a version of this work — industry runs on the same standards. If you did not, NDT is one of the few fields where a certification ladder rather than a degree decides what you earn."
+        ],
+        [
+          "The panel",
+          "David Sanders, ASNT Level III and NAS 410 Level III, NDT instructor and consultant · Dr. Ronnie D. Ingram, DM, MBA, MBE, retired USMC Master Sergeant, QA professional and university adjunct · Muriel D. Magloire, Senior Quality Manager, QC Engineering, GE Vernova Hitachi Nuclear Energy"
+        ],
+        [
+          "Covers",
+          "What NDT is · career opportunities across industries · training and advancement pathways · how military skills map across · mentorship and how to get connected"
+        ],
+        [
+          "Recurring",
+          "The Weekly Rundown runs weekly. If you cannot make this one, registering is how you hear about the next."
+        ]
+      ],
+      "link": "https://actnoweducation.org/weekly-rundown",
+      "linkLabel": "actnoweducation.org/weekly-rundown"
     }
   ]
 }
