@@ -100,12 +100,17 @@ h1 em{font-style:normal;color:var(--red)}
   display:flex;flex-direction:column}
 .entry.shut{opacity:.58;box-shadow:none}
 .entry .org{font-family:var(--display);font-size:30px;line-height:1.06;color:var(--navy);
-  letter-spacing:-.4px;margin-top:4px}
-.entry .what{color:var(--ink);opacity:.82;font-size:17px;margin-top:8px;max-width:78ch}
-.facts{display:grid;grid-template-columns:auto 1fr;gap:9px 18px;margin:18px 0 0;font-size:16px}
+  letter-spacing:-.4px;margin-top:4px;overflow-wrap:anywhere}
+.entry .what{color:var(--ink);opacity:.82;font-size:17px;margin-top:8px;max-width:78ch;
+  overflow-wrap:anywhere}
+/* min-width:0 + overflow-wrap:anywhere on both tracks: a grid item defaults to
+   min-width:auto, so one long unbreakable string (an email, a registration URL)
+   sizes the track past the card and the text escapes the border. */
+.facts{display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr);gap:9px 18px;
+  margin:18px 0 0;font-size:16px;min-width:0}
 .facts dt{font-family:var(--cond);font-size:13px;letter-spacing:2px;text-transform:uppercase;
-  color:var(--red);padding-top:4px;font-weight:600}
-.facts dd{margin:0;max-width:82ch}
+  color:var(--red);padding-top:4px;font-weight:600;min-width:0;overflow-wrap:anywhere}
+.facts dd{margin:0;max-width:82ch;min-width:0;overflow-wrap:anywhere}
 @media (max-width:560px){
   .facts{grid-template-columns:1fr;gap:2px}
   .facts dt{padding-top:12px}
@@ -116,6 +121,9 @@ h1 em{font-style:normal;color:var(--red)}
   padding:11px 18px;text-decoration:none;word-break:break-word;
   box-shadow:4px 4px 0 rgba(36,31,28,.22);margin-top:22px}
 .go:hover{background:var(--red)}
+.go .dom{display:block;overflow-wrap:anywhere}
+.go .act{display:block;font-weight:500;font-size:14px;letter-spacing:1.1px;
+  opacity:.82;margin-top:3px;overflow-wrap:anywhere}
 .pill{display:inline-block;font-family:var(--cond);font-size:13px;font-weight:600;
   letter-spacing:2px;text-transform:uppercase;padding:5px 11px;
   background:var(--cream);color:var(--navy);border:2px solid var(--navy)}
@@ -376,7 +384,21 @@ footer .sp{flex-grow:1}
     }
 
     if (item.link) {
-      var link = el('a', 'go', item.linkLabel || 'Open the source');
+      // Split the label so it wraps at a real boundary. Left to itself a long
+      // label breaks mid-word and strands a letter on its own line.
+      var label = item.linkLabel || 'Open the source';
+      var head = label, tail = '';
+      var dash = label.indexOf(' — ');
+      if (dash > -1) {
+        head = label.slice(0, dash);
+        tail = label.slice(dash + 3);
+      } else {
+        var slash = label.indexOf('/');
+        if (slash > -1) { head = label.slice(0, slash); tail = label.slice(slash); }
+      }
+      var link = el('a', 'go');
+      link.appendChild(el('span', 'dom', head));
+      if (tail) link.appendChild(el('span', 'act', tail));
       link.href = item.link;
       link.rel = 'noopener';
       card.appendChild(link);
