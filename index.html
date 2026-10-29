@@ -97,15 +97,18 @@ h1 em{font-style:normal;color:var(--red)}
 @media (min-width:2400px){ .list{grid-template-columns:repeat(auto-fit,minmax(560px,1fr));gap:26px} }
 .entry{background:var(--paper-2);border:2px solid var(--ink);padding:24px 25px;
   box-shadow:6px 6px 0 rgba(36,31,28,.16);min-width:0;
-  display:flex;flex-direction:column}
+  display:flex;flex-direction:column;container-type:inline-size}
 .entry.shut{opacity:.58;box-shadow:none}
 .entry .org{font-family:var(--display);font-size:30px;line-height:1.06;color:var(--navy);
   letter-spacing:-.4px;margin-top:4px;overflow-wrap:anywhere}
 .entry .what{color:var(--ink);opacity:.82;font-size:17px;margin-top:8px;max-width:78ch;
   overflow-wrap:anywhere}
-/* min-width:0 + overflow-wrap:anywhere on both tracks: a grid item defaults to
-   min-width:auto, so one long unbreakable string (an email, a registration URL)
-   sizes the track past the card and the text escapes the border. */
+/* The label track is FIXED, never auto. An auto track sizes itself to the longest
+   label in the card, so one wordy label squeezes every value in that card into a
+   narrow ribbon. A fixed track wraps the label instead and keeps every card's
+   geometry identical. min-width:0 + overflow-wrap:anywhere on both tracks because
+   a grid item defaults to min-width:auto, so one long unbreakable string (an email,
+   a registration URL) would otherwise size the track past the card edge. */
 .facts{display:grid;grid-template-columns:minmax(0,175px) minmax(0,1fr);gap:9px 18px;
   margin:18px 0 0;font-size:16px;min-width:0}
 .facts dt{font-family:var(--cond);font-size:13px;letter-spacing:2px;text-transform:uppercase;
@@ -115,6 +118,15 @@ h1 em{font-style:normal;color:var(--red)}
   .facts{grid-template-columns:1fr;gap:2px}
   .facts dt{padding-top:12px}
 }
+/* Keyed to the CARD's width, not the window's. In a three-up grid the cards are
+   narrow even on a wide screen, and a side-by-side label leaves the value a
+   ribbon. Below this the label sits on its own line and the value gets the
+   full card. */
+@container (max-width:540px){
+  .facts{grid-template-columns:1fr;gap:3px}
+  .facts dt{padding-top:13px}
+}
+@container (min-width:720px){ .facts{grid-template-columns:minmax(0,215px) minmax(0,1fr)} }
 .go{display:inline-block;margin-top:auto;align-self:flex-start;font-family:var(--cond);
   font-size:17px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;
   color:var(--cream);background:var(--navy);border:2px solid var(--ink);
