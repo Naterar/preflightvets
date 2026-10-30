@@ -787,6 +787,52 @@
       ],
       "link": "https://www.navylifema.com/Summit",
       "linkLabel": "navylifema.com/Summit"
+    },
+    {
+      "org": "ACT Now Education × SANS — Veterans Day BootUp CTF",
+      "what": "A free 72-hour Capture the Flag cybersecurity competition over Veterans Day, run by the SANS Institute and sponsored by ACT Now Education. Built for beginner and intermediate players — no prior cyber experience needed. Top three win a SANS Skills Quest subscription.",
+      "checked": "2026-10-30",
+      "deadline": "2026-11-09",
+      "facts": [
+        [
+          "Deadline",
+          "CTF registration closes Monday 9 November 2026 at 12:00 PM Eastern. No late sign-ups."
+        ],
+        [
+          "The trap",
+          "The deadline falls BEFORE the orientation webinar on Tuesday 10 November. The obvious plan — attend the webinar, then sign up — does not work. Register first, learn second."
+        ],
+        [
+          "Two separate steps",
+          "Registering for the webinar does not enter you in the CTF. Register for the webinar first, then open your SANS account dashboard and follow the prompt to register separately for the CTF on Ranges.io. Do only the first and you will have nothing to log into on Wednesday."
+        ],
+        [
+          "Orientation webinar",
+          "Tuesday 10 November 2026 · 1:00–2:00 PM Eastern."
+        ],
+        [
+          "Competition window",
+          "Wednesday 11 November 2026 at 9:00 AM Eastern to Saturday 14 November 2026 at 9:00 AM Eastern. 72 hours, played at your own pace."
+        ],
+        [
+          "How it is scored",
+          "Ranked by hit rate — the fewest total attempts across the challenges you complete. Not the most flags, not the fastest finish. Speed only breaks a tie. Every wrong submission counts against you, so read the challenge and submit once rather than brute-forcing it. This is the single thing a first-timer is most likely to get wrong."
+        ],
+        [
+          "Who it is for",
+          "Service members, veterans, military spouses, dependents, and anyone curious about cybersecurity. Free. Virtual."
+        ],
+        [
+          "Prizes",
+          "Top three by hit rate each receive a SANS Skills Quest subscription. Previous SANS BootUp CTF winners may compete but are not eligible to win a prize."
+        ],
+        [
+          "Conflicting dates online",
+          "An older SANS landing page still shows a 3 November deadline and a 60-hour window ending 13 November. That page is stale. The dates here come from the SANS webcast page and the SANS press announcement, which agree with each other."
+        ]
+      ],
+      "link": "https://www.sans.org/webcasts/veterans-day-capture-flag-orientation-webinar",
+      "linkLabel": "sans.org — orientation webinar"
     }
   ]
 }
