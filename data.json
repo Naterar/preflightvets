@@ -871,6 +871,48 @@
       ],
       "link": "https://www.elizabethdolefoundation.org/events/calendar",
       "linkLabel": "elizabethdolefoundation.org — events"
+    },
+    {
+      "org": "DVNF — Veterans Resource Fair (Hyattsville, MD)",
+      "what": "A free in-person resource fair run by the Disabled Veterans National Foundation, bringing together employment, housing, financial, benefits and health organisations — plus free services you can walk out with the same day. DMV area only.",
+      "checked": "2026-11-01",
+      "deadline": "2026-11-09",
+      "facts": [
+        [
+          "When and where",
+          "Monday 9 November 2026 · 9:00 AM – 2:00 PM · College Park Marriott Hotel & Conference Center, 3501 University Blvd E, Hyattsville, MD 20783. Free entry, free parking."
+        ],
+        [
+          "Check the start time",
+          "Two start times are published for this one: the registration page says 9:00 AM and the event graphic says 9:30 AM. Plan for 9:00 and you cannot be caught out."
+        ],
+        [
+          "At the door",
+          "A DD214 or a VA card is required. Not a description of your service — a document. Pre-registration is encouraged through the ticket page."
+        ],
+        [
+          "No DD214 to hand",
+          "milConnect is the quick route but it needs a premium DS Logon; an ID.me or My HealtheVet login will not open your records there, which catches people out. A National Archives request runs one to three weeks. If you hold a VA card but not the DD214, call DVNF on 202-737-0522 before making the trip rather than finding out at the door."
+        ],
+        [
+          "Organisations attending",
+          "Employment opportunities, housing assistance, financial assistance, veteran benefits, and physical and mental health support."
+        ],
+        [
+          "Free the same day",
+          "Work attire, haircuts, basic manicure, medical, dental, comfort kits, food, refreshments, gift cards and a raffle. The work attire and the haircut together amount to an interview you can actually turn up to."
+        ],
+        [
+          "Vendor tables",
+          "Sold out. Attendee registration is still open, but an organisation hoping to exhibit has missed the window."
+        ],
+        [
+          "Contact",
+          "info@dvnf.org · 202-737-0522 · dvnf.org"
+        ]
+      ],
+      "link": "https://buytickets.at/disabledveteransnationalfoundation/2110771",
+      "linkLabel": "buytickets.at — pre-register"
     }
   ]
 }
