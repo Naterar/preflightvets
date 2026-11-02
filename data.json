@@ -913,6 +913,44 @@
       ],
       "link": "https://buytickets.at/disabledveteransnationalfoundation/2110771",
       "linkLabel": "buytickets.at — pre-register"
+    },
+    {
+      "org": "Microsoft MSSA — Military Spouse",
+      "what": "A free 20-week Microsoft training programme for military spouses, toward a systems administrator role. Live and virtual. Microsoft ran a program brief on 2 November 2026 and the recording stays available, so the information is not time-locked — but the application windows are.",
+      "checked": "2026-11-02",
+      "deadline": null,
+      "facts": [
+        [
+          "What it is",
+          "MSSA–Military Spouse is a 20-week programme on one track: server and cloud administration, toward a systems administrator role. It covers scripting and automation, networking, identity and access management, cloud administration, and Azure and AI fundamentals."
+        ],
+        [
+          "The real gate — hours",
+          "Monday to Friday, 9:00 AM to 3:00 PM Pacific, live and virtual, with optional office hours either side. Around fifteen people to a class. This is a full-time commitment for five months, not an evening course. Anyone who works, cares for someone, or expects to move house mid-programme should work out whether those hours are possible before applying."
+        ],
+        [
+          "Prerequisite before applying",
+          "A LinkedIn Learning path — Networking and Administration Fundamentals, about 20 hours — is required, and it needs LinkedIn Premium. Eligible members of the military community get LinkedIn Premium free for a year, so claim that rather than paying for it. See the LinkedIn Premium entry on this list."
+        ],
+        [
+          "No job is guaranteed",
+          "The programme offers role-search support and networking with corporate partners. It does not guarantee an interview with Microsoft or with a hiring partner. Worth asking what the actual placement rate is."
+        ],
+        [
+          "Cohort dates — verify these",
+          "Microsoft's own pages disagree with each other on the application window: one place shows September 20–27 2027 for a February 2028 cohort, another shows September 20–27 2026 for the same programme. Do not plan around either. Ask Microsoft directly when the next window opens and closes."
+        ],
+        [
+          "The program brief",
+          "Monday 2 November 2026, two sessions on Microsoft Teams — 12:00 PM Eastern and 4:00 PM Eastern. Session 1: aka.ms/MilSpouseSession1. Session 2: aka.ms/MilSpouseSession2. A recording is available on demand at lnkd.in/gWvVKc3d, so the brief itself is not a deadline."
+        ],
+        [
+          "Also worth knowing",
+          "The separate MSSA programme for transitioning service members, veterans and retirees is open to all US and UK MoD branches. Active duty applicants need a separation date within 180 days of the programme start and must speak to their local SkillBridge manager first."
+        ]
+      ],
+      "link": "https://military.microsoft.com/mssa/militaryspouse",
+      "linkLabel": "military.microsoft.com — MSSA military spouse"
     }
   ]
 }
