@@ -184,6 +184,10 @@
         [
           "Also",
           "Tutor.com states the program depends on available budget and is not guaranteed — funders set eligibility and it can change."
+        ],
+        [
+          "Also in the MWR library",
+          "Tutor.com also appears inside the DoD MWR digital library collection, where it carries its own eligibility rules on top of the library's. Two different doors with two different rule sets — if one turns you away, the other may not. See the DoD MWR Digital Library entry on this list."
         ]
       ],
       "link": "https://military.tutor.com/eligibility",
@@ -951,6 +955,52 @@
       ],
       "link": "https://military.microsoft.com/mssa/militaryspouse",
       "linkLabel": "military.microsoft.com — MSSA military spouse"
+    },
+    {
+      "org": "DoD MWR Digital Library",
+      "what": "Ten paid subscriptions the military community can use at no cost through the Morale, Welfare and Recreation digital library — O'Reilly Learning, EBSCO LearningExpress, Tutor.com, Universal Class, Mango Languages, Libby/OverDrive, The Wall Street Journal, Consumer Reports, Ancestry Library Edition and Gale OneFile: Vocations and Careers. One login covers all of them.",
+      "checked": "2026-11-03",
+      "deadline": null,
+      "facts": [
+        [
+          "Who has full access",
+          "Under DoD Instruction 1015.10: active duty; Reserve and National Guard; retirees; Medal of Honor recipients; veterans with a 100% service-connected disability; and eligible dependents with an ID card."
+        ],
+        [
+          "Veteran status alone",
+          "A veteran rated below 100% service-connected does not get access on veteran status by itself. This is the same rule that governs on-base MWR privileges, not a decision the library makes. Worth knowing before you create an account."
+        ],
+        [
+          "Civilians",
+          "DoD and Coast Guard civilians, both appropriated and non-appropriated fund, qualify while stationed outside the United States. Stateside, access depends on the individual resource. Local nationals sign in with a library card number; contractors have to go through the Contact Us link."
+        ],
+        [
+          "How to log in",
+          "Go to dodmwrlibraries.org and pick your service's portal, then sign in with your DoD ID number and date of birth. Not a CAC and not a DS Logon — the portal checks you against DEERS. Then open Digital Collections, A to Z."
+        ],
+        [
+          "Old ID card",
+          "If your ID card shows an SSN instead of a DoD ID number, enter 0000000000 in the DoD ID field and then the last four digits of your SSN on the next page. This is published on their own FAQ and almost nobody repeats it. It is the step that stops older retirees getting in."
+        ],
+        [
+          "Best for a career change",
+          "O'Reilly Learning carries technology, AI, cybersecurity and certification prep — the full library, not a sampler. If you are studying Security+, AWS or Azure, look there before buying a course. EBSCO LearningExpress carries the practice tests people usually pay for separately."
+        ],
+        [
+          "If something will not open",
+          "Consumer Reports is blocked by some military network filters, and single sign-on resources can fail on military or high-security networks. Try from a personal connection before concluding you do not have access. Offline reading works for most but not all magazines, e-books and audiobooks."
+        ],
+        [
+          "Tutor.com is a separate case",
+          "Tutor.com appears in this collection but carries its own eligibility rules on top of the library's. There is also a separate, directly funded route at military.tutor.com — see the Tutor.com entry on this list, which has different rules again."
+        ],
+        [
+          "Availability varies",
+          "Which resources appear differs by service portal and changes over time. If something listed here is missing from your A to Z, check another service portal or ask your MWR library before assuming it has gone."
+        ]
+      ],
+      "link": "https://dodmwrlibraries.org",
+      "linkLabel": "dodmwrlibraries.org"
     }
   ]
 }
