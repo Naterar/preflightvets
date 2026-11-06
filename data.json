@@ -1223,6 +1223,44 @@
       ],
       "link": "https://qrco.de/redwhiteblue",
       "linkLabel": "Register — all three"
+    },
+    {
+      "org": "Google Launchpad for Veterans — Gen AI Leader 2026",
+      "what": "A free two-day virtual Google Cloud Gen AI Leader training on 12 and 13 November 2026, hosted by ROI Training, ending in a complimentary certification exam voucher. Open to U.S. and Canada military veterans and service members. Registration needs the access code ACTNowEducation.",
+      "checked": "2026-11-06",
+      "deadline": "2026-11-13",
+      "facts": [
+        [
+          "Who qualifies",
+          "U.S. and Canada military veterans and service members. No prior technical experience is required — Gen AI Leader is the non-technical track."
+        ],
+        [
+          "The two days",
+          "12 and 13 November 2026, virtual, hosted by ROI Training. Interactive training sessions plus a panel discussion with veterans from Google. Start times and the time zone are not stated on the published material."
+        ],
+        [
+          "What you get",
+          "Two days of training, a complimentary Gen AI Leader exam voucher, two follow-on exam prep sessions, and a chance at a pair of Google socks — in 2025 the socks went to the first 500 people who passed."
+        ],
+        [
+          "The access code",
+          "Register with ACTNowEducation. The published steps are: click Sign Me Up, select “Continue without email”, enter your email address, enter the access code, then finish the remaining prompts. Steps two and three look contradictory and are meant to be followed in that order."
+        ],
+        [
+          "Training is not the cert",
+          "Attending earns a voucher, not a certification. The Gen AI Leader exam is booked and sat separately, and passing it is what earns the credential. A voucher left unredeemed is the most common way this ends in nothing."
+        ],
+        [
+          "Dates not published",
+          "The exam prep session dates and the voucher expiry date are not on the flyer or on anything Google has published for the 2026 cohort. Ask for both at registration and diary the expiry the day the voucher lands."
+        ],
+        [
+          "What prior years did",
+          "2024 ran as Cloud Digital Leader. In 2025 the event was 13–14 November, prep sessions were 17 and 21 November, and Google encouraged taking the exam between 21 November and 19 December without publishing a voucher expiry. Useful as a shape for what to expect, not as 2026 dates."
+        ]
+      ],
+      "link": "https://goo.gle/2026L4Vets",
+      "linkLabel": "Register — access code"
     }
   ]
 }
