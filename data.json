@@ -1307,6 +1307,48 @@
       ],
       "link": "https://news.va.gov/150505/2026-veterans-day-discounts-free-meals-offers/",
       "linkLabel": "VA News — 2026 offers"
+    },
+    {
+      "org": "Service to Success — Virtual Military & Federal Hiring Fair",
+      "what": "A free three-hour virtual hiring fair on Friday 13 November 2026, 3:00 to 6:00 PM EST, run by Service to Success with ACT Now Education and hosted on Zoom Events. For veterans, transitioning service members, military spouses, SkillBridge candidates and the federal community.",
+      "checked": "2026-11-09",
+      "deadline": "2026-11-13",
+      "facts": [
+        [
+          "When it runs",
+          "3:00 to 6:00 PM EST — 2 PM CT, 1 PM MT, noon PT. Three hours, not a drop-in. The intro keynote runs 3 to 4 PM and the registration page says to join there first; a help chat runs 4 to 6 PM alongside the fair."
+        ],
+        [
+          "Military and federal",
+          "The full event name is the Virtual Military AND Federal Hiring Fair. Most graphics drop the federal half. Open to veterans, transitioning service members, military spouses, SkillBridge candidates and the federal community."
+        ],
+        [
+          "Employers listed so far",
+          "Amazon, Navy Federal Credit Union, ManTech, V2X, T-Mobile, TEKsystems, CHRISTUS Health, Leaf Home, ARA, FDM Group, and GuidePoint Security — the last of which is named on the registration page and on none of the circulating graphics."
+        ],
+        [
+          "The list is not final",
+          "The organiser states companies are still signing up and that the final list of registered employers is emailed to attendees before the day. Do not skip the event because your industry is missing from a flyer."
+        ],
+        [
+          "Career areas",
+          "IT and cybersecurity; engineering and defense; healthcare; operations, finance and sales."
+        ],
+        [
+          "Registering",
+          "The servicetosuccess.com/HiringFair link redirects to Zoom Events, not to their own site. Register with a Zoom account or with an email address. Free. Zoom restricts registration to a listed set of countries, which may matter if you are OCONUS."
+        ],
+        [
+          "Check your spam folder",
+          "The confirmation email arrives immediately after registering and is the one that carries the final employer list. The organiser flags that it often lands in spam."
+        ],
+        [
+          "What to ask on the day",
+          "Which of your roles fit what I have done; what am I missing to qualify; what should I do next to apply. A conversation gives you the gap analysis an application never will."
+        ]
+      ],
+      "link": "https://servicetosuccess.com/HiringFair",
+      "linkLabel": "Register — free"
     }
   ]
 }
