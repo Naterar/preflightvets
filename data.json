@@ -1391,6 +1391,48 @@
       ],
       "link": "mailto:nicole.dhanraj@actnoweducation.org",
       "linkLabel": "Email to apply"
+    },
+    {
+      "org": "Wounded Warrior Project × USAA — Warrior Secure Start",
+      "what": "A $1,000 financial empowerment grant for veterans in their first 24 months after military service, run by Wounded Warrior Project with USAA funding. Complete a financial education course with a WWP Financial Readiness specialist, submit the certificate, and the grant is paid into your bank account. Nothing to repay. Registration with WWP is free and is the prerequisite.",
+      "checked": "2026-11-11",
+      "deadline": null,
+      "facts": [
+        [
+          "No visible injury needed",
+          "The common assumption that WWP is only for the visibly wounded is the main barrier to this grant. WWP's registration page states that a visible injury or combat-related injury is not required, and sets eligibility at having served on or after 11 September 2001."
+        ],
+        [
+          "Who may register",
+          "Veterans who served on or after 11 September 2001; active-duty service members; service members preparing to transition; eligible National Guard and Reserve members; and family members, caregivers and others in a warrior's support system. Registration is free."
+        ],
+        [
+          "Register before separating",
+          "You can join WWP while still serving or while preparing to transition. Because the grant window is the first 24 months after service, registering early means the window is spent using the program rather than joining it."
+        ],
+        [
+          "The amount and the window",
+          "$1,000, one time, described by USAA as purpose-built for veterans during the first 24 months after military service. Announced 9 July 2026 as part of a $5M, five-year USAA commitment expected to support more than 4,000 veterans."
+        ],
+        [
+          "How the grant is paid",
+          "Paid directly into the veteran's bank account after the financial education course is completed and the certificate is submitted. Usable for emergency savings, paying down debt, or another financial goal. No repayment."
+        ],
+        [
+          "It is case-managed",
+          "Not a self-serve form. The veteran meets a WWP Financial Readiness specialist who reviews their situation before directing them to the course modules. The program is aimed at veterans experiencing financial strain, and grants run in the hundreds per year rather than unlimited."
+        ],
+        [
+          "Unverified requirements",
+          "An 80% quiz pass mark, two coaching sessions and a 60-day completion window circulate with this program but appear on neither USAA's announcement nor WWP's Financial Readiness page, which does not name Warrior Secure Start at all. One published account describes course modules with three classes. Confirm actual requirements with the specialist at enrollment."
+        ],
+        [
+          "How to start",
+          "Register at woundedwarriorproject.org/programs/wwp-registration, or call 888.WWP.ALUM (888.997.2586). The WWP Resource Center can confirm which documents are needed and answer eligibility questions."
+        ]
+      ],
+      "link": "https://www.woundedwarriorproject.org/programs/wwp-registration",
+      "linkLabel": "Register free"
     }
   ]
 }
