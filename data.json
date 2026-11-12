@@ -1433,6 +1433,48 @@
       ],
       "link": "https://www.woundedwarriorproject.org/programs/wwp-registration",
       "linkLabel": "Register free"
+    },
+    {
+      "org": "Headlamp (Talent SmartGrid) — veteran role matching",
+      "what": "A recruiting platform that translates military records into scored corporate competencies and routes veterans to employers' hard-to-fill roles. Free for veterans; employers are the paying customers. Also an authorized DoD SkillBridge industry partner that manages the MOU, training plan and compliance on the employer's behalf, so some roles can be entered through SkillBridge rather than as a direct hire.",
+      "checked": "2026-11-12",
+      "deadline": null,
+      "facts": [
+        [
+          "They are not the employer",
+          "Headlamp does not hire you itself. It verifies what you did in service and routes you to a client employer with a role to fill. The practical consequence: the recruiter reading your message is paid to place you, not to screen you out, which is the opposite of an applicant tracking system."
+        ],
+        [
+          "Free for veterans",
+          "Veterans and service members use it at no cost. Employers pay for access, which is why the veteran side carries no fee or subscription."
+        ],
+        [
+          "A SkillBridge route too",
+          "Headlamp states it is an authorized DoD SkillBridge industry partner and handles the Memorandum of Understanding, training plans and OFCCP compliance for the host employer. Anyone inside their final 180 days of service should ask whether a given role can be entered on SkillBridge, where the DoD continues to pay the service member and the host pays nothing. This is not stated on the individual role postings."
+        ],
+        [
+          "Open roles as of 12 Nov 2026",
+          "Ten listings, eleven seats. Butte, MT onsite: Director of Marketing, Sr Mechanical Engineer, Entry-Level Mechanical Engineer, Sr Chemical Engineer, Process Development Engineer, Controls Engineer, Sr Electromechanical Engineer, Outside Sales Engineer (2 seats). Latrobe, PA onsite: Inside Sales Rep. Remote: Outside Sales Rep. Expect this list to change."
+        ],
+        [
+          "Check what remote means",
+          "The remote Outside Sales Rep lists twelve hub cities (Houston, Dallas, Denver, Phoenix, Atlanta, Salt Lake City, Reno, Las Vegas, Charlotte, Indianapolis, Columbus, Midland/Odessa). Confirm whether that means field sales based near a hub or genuinely location-independent work."
+        ],
+        [
+          "Most roles are in one place",
+          "Eight of the ten current listings are onsite in Butte, Montana. For most applicants that is a relocation decision rather than a commute, and it is worth settling before investing in an application."
+        ],
+        [
+          "How to approach it",
+          "Contact is via the recruiter rather than a job board. Send the role, your location and one specific example — name the equipment, the fault and the fix, so the recruiter can repeat it to a hiring manager without a follow-up question."
+        ],
+        [
+          "Where to start",
+          "myheadlamp.com for the platform and veteran access. Current roles run through recruiter Lora Kelly at linkedin.com/in/lorakelly. General enquiries: info@myheadlamp.com."
+        ]
+      ],
+      "link": "https://www.myheadlamp.com/",
+      "linkLabel": "Veteran access — free"
     }
   ]
 }
