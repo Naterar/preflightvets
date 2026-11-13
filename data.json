@@ -1475,6 +1475,186 @@
       ],
       "link": "https://www.myheadlamp.com/",
       "linkLabel": "Veteran access — free"
+    },
+    {
+      "org": "ACT Now Education — free certification directory",
+      "what": "A directory of funded certification programs for veterans, transitioning service members and military spouses, covering CompTIA, AWS, Azure, Google Cloud, Cisco, ISC2, PMI, Splunk, IBM and more. Eleven programs listed on the veteran side and ten on the spouse side.",
+      "checked": "2026-11-13",
+      "deadline": null,
+      "facts": [
+        [
+          "Veteran side, 11 programs",
+          "Act Now Education, IVMF Onward to Opportunity, VetsInTech, Per Scholas, NPower, ServiceNow, Purdue University Northwest, Boots to Books, SANS Cyber Workforce Academy, Cloud Veterans, MedCerts."
+        ],
+        [
+          "Spouse side, 10 programs",
+          "Act Now Education, IVMF Onward to Opportunity, VetsInTech, Per Scholas, NPower, Cloud Veterans, SANS Cyber Workforce Academy, Boots to Books, SpouseWorks Scholarship, MedCerts. CISSP appears on the spouse list but not the veteran one."
+        ],
+        [
+          "Two are veteran-only",
+          "ServiceNow and Purdue University Northwest appear on the veteran side only. ServiceNow's link is a SkillBridge URL, so it is for the final 180 days of service rather than for veterans already separated."
+        ],
+        [
+          "MedCerts is not free",
+          "MedCerts is a paid school that accepts funding such as SpouseWorks rather than a no-cost program. Price it before committing."
+        ],
+        [
+          "Weekly Rundown",
+          "ACT Now runs a live Weekly Rundown on Saturdays at 1 PM Eastern at actnoweducation.org/weekly-rundown for walking through these."
+        ]
+      ],
+      "link": "https://actnoweducation.org/programs",
+      "linkLabel": "The full directory"
+    },
+    {
+      "org": "SpouseWorks Scholarship (formerly MyCAA)",
+      "what": "Up to $4,000 in Department of Defense funding for a military spouse to earn a license, certification or associate degree, or to keep an existing credential current. Renamed from MyCAA, and the rank restriction was removed on 27 July 2026.",
+      "checked": "2026-11-13",
+      "deadline": null,
+      "facts": [
+        [
+          "The rank rule is gone",
+          "Before 27 July 2026 eligibility was limited to spouses of junior pay grades. The Office of Spouse Employment: eligibility was limited by rank before that date, and as of that date there is no rank eligibility restriction. Spouses turned down under the old rule qualify now."
+        ],
+        [
+          "Who qualifies",
+          "Spouses of active-duty Army, Marine Corps, Navy, Air Force and Space Force members regardless of rank or pay grade, plus spouses of Guard and Reserve members on qualifying Title 10 orders. High school or GED required. Employed spouses are eligible."
+        ],
+        [
+          "Who does not",
+          "A spouse who is themselves on Title 10 orders; a spouse legally separated or under court order from a Title 10 member; a spouse whose Guard or Reserve sponsor is in warning/alert, post-deployment, demobilization or transition status."
+        ],
+        [
+          "$2,000 fiscal-year cap",
+          "Maximum $4,000 total but no more than $2,000 per government fiscal year (1 October to 30 September), counted by the course start date rather than the application date."
+        ],
+        [
+          "Three-year forfeiture",
+          "Unused funds are forfeited three years after the first course starts. Using $500 in year one and $500 in year two means the remaining $1,000 cannot be recovered. Reaching the full $4,000 requires planning across fiscal years from the outset."
+        ],
+        [
+          "What it pays for",
+          "Tuition toward a license, certification or associate degree, continuing education to maintain a credential, national tests including CLEP, and the certification exam itself. Not taxable."
+        ],
+        [
+          "What it will not pay",
+          "Bachelor's or higher coursework, certificates of completion that do not lead to a certification or license, books, supplies, computers, fees of any kind including registration and technology fees, reimbursements, courses already started, repeat courses, high school or GED completion, ESL, transport, lodging or childcare."
+        ],
+        [
+          "Timing and process",
+          "A school-completed Education and Training Plan must be approved before any funding request, and review takes up to 14 business days. Paperwork must be approved before the sponsor's separation or release from Title 10 orders. Associate degrees must finish within 12 months, licenses and certificates within 18, with no exceptions."
+        ],
+        [
+          "Start with a coach",
+          "The process begins with a SpouseWorks career coach via Military OneSource on 800-342-9647, not with an online form. Login moved from DS Logon to myAuth."
+        ]
+      ],
+      "link": "https://mycaa.militaryonesource.mil/mycaa",
+      "linkLabel": "SpouseWorks portal"
+    },
+    {
+      "org": "IVMF Onward to Opportunity (O2O)",
+      "what": "Free, fully online professional certification training from Syracuse University's Institute for Veterans and Military Families, covering AWS, CompTIA, Cisco, PMI, Six Sigma, HR and Python credentials. Course enrollment, materials and advising are free to every participant.",
+      "checked": "2026-11-13",
+      "deadline": null,
+      "facts": [
+        [
+          "It funds one exam, once",
+          "The program funds a single certification exam, and eligible candidates may participate only once. More than one course can be taken, one at a time, but the funded exam is singular. Choose the credential before enrolling."
+        ],
+        [
+          "Exam fee is conditional",
+          "Active-duty members are covered during their final six months. Veterans and spouses are covered only while currently unemployed. Employed Guard and Reserve members pay their own exam fee."
+        ],
+        [
+          "Who qualifies",
+          "Active duty transitioning within 6 months; any veteran with at least 180 days of service and an honorable discharge, with no time limit after separation; spouses of active duty, eligible veterans, Guard and Reserve; and part-time Guard and Reserve members."
+        ],
+        [
+          "Time and format",
+          "Roughly 6 to 8 hours a week over 90 days, delivered fully online and self-paced, with installation-based options also available. The first course must finish within 90 days of the cohort start."
+        ],
+        [
+          "Expect a wait",
+          "Online-only applicants face a 2 to 3 month wait for a future cohort, so apply well before the credential is needed."
+        ]
+      ],
+      "link": "https://ivmf.syracuse.edu/programs/o2o",
+      "linkLabel": "Onward to Opportunity"
+    },
+    {
+      "org": "SANS Cyber Workforce Academy",
+      "what": "A competitive, aptitude-based scholarship delivering GIAC certifications — GFACT, GSEC and GCIH — at no cost to the participant. Designed as a career entry route into cybersecurity rather than an upskilling program.",
+      "checked": "2026-11-13",
+      "deadline": null,
+      "facts": [
+        [
+          "Experience disqualifies you",
+          "Prior or current work experience in cybersecurity or information security makes an applicant ineligible. So does already holding a GIAC certification, or a graduate degree in the field. It is built for career changers, which is the opposite of what most applicants assume."
+        ],
+        [
+          "Competitive, not open",
+          "Described in the program's own application guide as a competitive, aptitude-based scholarship where participation is earned through merit. Applicants sit an online aptitude assessment and are not shown their score; an invitation to complete the application is not an offer."
+        ],
+        [
+          "Other eligibility",
+          "US citizens and lawful permanent residents only. Active-duty applicants must be within 6 months of separation. Current full-time students are not eligible. An undergraduate degree is fine."
+        ],
+        [
+          "What you earn",
+          "GFACT for foundations, GSEC for security essentials and GCIH for incident handling — three GIAC certifications at no cost to the participant."
+        ]
+      ],
+      "link": "https://www.sans.org/cyber-academy/",
+      "linkLabel": "SANS Cyber Academies"
+    },
+    {
+      "org": "Per Scholas — Vets in Tech",
+      "what": "Free tuition-free technology training toward A+, Google IT Support, CySA+, AWS Cloud Practitioner and Salesforce Administrator, delivered at campuses across the US with a dedicated military-connected track.",
+      "checked": "2026-11-13",
+      "deadline": null,
+      "facts": [
+        [
+          "A generous military ceiling",
+          "Civilian applicants need individual or household income below 80% of the campus-based Area Median Income. Veterans, active duty, Reserve, Guard and military spouses are eligible with income below $200,000, so most military-connected applicants who assume they earn too much do not."
+        ],
+        [
+          "How income is counted",
+          "Current employment counts current income. Unemployed up to 90 days counts the last job's income; unemployed beyond 90 days counts as zero. Household income covers everyone in the residence over the last 12 months. Savings, benefits, passive income, child support and inheritance are excluded."
+        ],
+        [
+          "Campus-based",
+          "Training runs through named campuses including Dallas, Atlanta, National Capital Region, Los Angeles, Pittsburgh and New York. Check the campus list before planning around it."
+        ]
+      ],
+      "link": "https://perscholas.org/veterans/",
+      "linkLabel": "Per Scholas — veterans"
+    },
+    {
+      "org": "NPower — free tech training",
+      "what": "No-cost technology training toward ITIL, A+, Security+, AWS Cloud, AWS Solutions Architect Associate and the Google IT Support certificate, with a dedicated track for veterans and military spouses.",
+      "checked": "2026-11-13",
+      "deadline": null,
+      "facts": [
+        [
+          "Free of charge, not of time",
+          "Most classes require a four-hour-a-day commitment Monday through Friday for up to 20 weeks, plus roughly two more hours daily of outside work. That is not something that fits around full-time employment."
+        ],
+        [
+          "Who qualifies",
+          "Veterans and military spouses over 21 — no upper age limit and no stated education requirement — who are transitioning through DoD SkillBridge, honorably discharged, Guard or Reserve, or a military spouse. The young adult track is 18 to 26 with a high school diploma."
+        ],
+        [
+          "Location matters",
+          "Applicants must be in or near NPower's listed cities. Online courses are offered only within that geographic footprint, so remote attendance from outside it is not available."
+        ],
+        [
+          "Cost and outcome",
+          "Fully no-cost to selected participants with no debt on completion. No stipend is offered."
+        ]
+      ],
+      "link": "https://www.npower.org/",
+      "linkLabel": "NPower"
     }
   ]
 }
