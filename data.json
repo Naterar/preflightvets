@@ -195,8 +195,8 @@
     },
     {
       "org": "Salesforce Military",
-      "what": "Free self-paced Salesforce and AI training on Trailhead, plus certification exam vouchers that cover the roughly $200 exam fee.",
-      "checked": "2026-10-16",
+      "what": "Free self-paced Salesforce and AI training on Trailhead, expert-led Trailhead Academy classes with fees waived, and a certification exam voucher covering the roughly $200 fee. A first certification then opens a 12-week Hiring Our Heroes fellowship and guaranteed interviews through the Salesforce Talent Alliance — the pipeline is the point, not the training.",
+      "checked": "2026-11-15",
       "deadline": null,
       "facts": [
         [
@@ -222,6 +222,22 @@
         [
           "Watch the clock",
           "Class registration must be completed within 7 days of approval, exam vouchers expire, and exam accommodation requests need 30 days' notice."
+        ],
+        [
+          "Required learning first",
+          "Before choosing a class or claiming an exam voucher you must complete the required learning module for the certification you want. Completed certifications then appear under My Benefits, where the benefit is collected."
+        ],
+        [
+          "Classes are scarce",
+          "Trailhead Academy classes are virtual, limited to roughly two Salesforce Military seats each, and approved one at a time through a support case. Declining an approved class produces a free exam voucher by email instead."
+        ],
+        [
+          "Do not claim early",
+          "The exam voucher email carries an expiry date, and the program advises not claiming a voucher until you are ready to schedule the exam."
+        ],
+        [
+          "Use the salesforce.com URL",
+          "Circulating material points at veterans.my.site.com/s/, which 302-redirects to trailhead.salesforce.com/salesforce-military with the signup modal open. The redirect works, but the my.site.com domain reads like phishing to an audience that is heavily targeted, so the canonical address is the one worth sharing."
         ]
       ],
       "link": "https://trailhead.salesforce.com/salesforce-military",
