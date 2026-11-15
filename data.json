@@ -1655,6 +1655,94 @@
       ],
       "link": "https://www.npower.org/",
       "linkLabel": "NPower"
+    },
+    {
+      "org": "Amazon Military — 11 hiring tracks",
+      "what": "Amazon's military talent acquisition routes for veterans, transitioning service members and military spouses: a landing page, cleared roles, Pathways, two apprenticeships, Hiring Our Heroes fellowships, data center roles, a skills translator, a webinar series, job simulations, Amazon Leo and Reliability Maintenance Engineering.",
+      "checked": "2026-11-14",
+      "deadline": null,
+      "facts": [
+        [
+          "Several need no degree",
+          "Data center roles are advertised as many not requiring a college degree. Both apprenticeships are built to supply the skills. Military Pathways lists an engineering bachelor's as preferred rather than required."
+        ],
+        [
+          "Try a role before applying",
+          "The job simulations let a candidate run an Amazon Operations Manager role before submitting an application. Free, and there are two separate simulations rather than one."
+        ],
+        [
+          "Two apprenticeships, not one",
+          "Military Apprentice and RME Apprentice are separate tracks with separate pages, presented under a single heading on the source material."
+        ],
+        [
+          "Two tracks share a page",
+          "The webinar series and the main landing page resolve to the same URL, so the webinar route does not reach a webinar listing. The Reliability Maintenance Engineering route resolves to the general Amazon Operations team page rather than an RME-specific one."
+        ],
+        [
+          "Two are third-party",
+          "The skills translator runs on amazon.oplign.com and the job simulations on app.redeployable.io — neither is an Amazon domain. The simulation links carry campaign tracking parameters that may not persist."
+        ],
+        [
+          "Landing page",
+          "amazon.jobs/military — also where the webinar series route leads."
+        ],
+        [
+          "Cleared and data center",
+          "Cleared roles: amazon.jobs/content/en/cleared-talent. Data centers: amazon.jobs/content/en/teams/amazon-web-services/data-centers."
+        ],
+        [
+          "Apprenticeship links",
+          "amazon.jobs/en/landing_pages/mil-apprentice and amazon.jobs/en/landing_pages/rme-apprentice."
+        ],
+        [
+          "Tools and partners",
+          "Skills translator: amazon.oplign.com. Job simulations: app.redeployable.io/join. Fellowships run through Hiring Our Heroes at hiringourheroes.org/career-services/fellowships."
+        ],
+        [
+          "Teams and programs",
+          "Pathways: amazon.jobs/content/en/career-programs/pathways. Amazon Leo: amazon.jobs/content/en/teams/devices-services/leo. Operations and RME: amazon.jobs/content/en/teams/amazon-operations."
+        ]
+      ],
+      "link": "https://www.amazon.jobs/military",
+      "linkLabel": "Amazon Military"
+    },
+    {
+      "org": "Amazon Military Pathways — officer leadership track",
+      "what": "A three-year operations leadership development program entering as an Operations Manager at an Amazon operations facility, progressing through Area Manager to Senior Operations Manager. Listed on Amazon's military material as Pathways, which is easy to mistake for an MBA-only route.",
+      "checked": "2026-11-14",
+      "deadline": null,
+      "facts": [
+        [
+          "No degree is required",
+          "A bachelor's degree in an engineering discipline is listed as preferred, not required, and the posting does not ask for an MBA. The MBA framing on circulating material turns away candidates who already meet the stated qualifications."
+        ],
+        [
+          "Commissioned officers only",
+          "The basic qualifications specify a commissioned officer at the company-grade level. No enlisted route appears on the posting."
+        ],
+        [
+          "A twelve-month window",
+          "Basic qualifications state transitioned or retired within one year, marked no exceptions. The window runs from each person's own separation date rather than a programme closing date."
+        ],
+        [
+          "Service length expected",
+          "Approximately ten years of active duty service, plus experience leading teams in operational or logistics environments."
+        ],
+        [
+          "What is preferred",
+          "Service academy graduates; operations, logistics, supply chain or engineering specialties; battalion or company-level command or equivalent leadership of 100 or more personnel; complex logistics or transportation management experience."
+        ],
+        [
+          "Pay and placement",
+          "The 2027 posting lists a starting salary of $147,100. Placement is matched to a US operations facility through a recruiter before an offer, and candidates must be willing to relocate at hire. Cohorts start between January and July."
+        ],
+        [
+          "If this is not you",
+          "The apprenticeships, data center roles and cleared roles remain open without officer status, service length or a separation window, and none of them require a degree."
+        ]
+      ],
+      "link": "https://amazon.jobs/content/en/career-programs/pathways",
+      "linkLabel": "Amazon Pathways"
     }
   ]
 }
