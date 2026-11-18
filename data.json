@@ -195,8 +195,8 @@
     },
     {
       "org": "Salesforce Military",
-      "what": "Free self-paced Salesforce and AI training on Trailhead, expert-led Trailhead Academy classes with fees waived, and a certification exam voucher covering the roughly $200 fee. A first certification then opens a 12-week Hiring Our Heroes fellowship and guaranteed interviews through the Salesforce Talent Alliance — the pipeline is the point, not the training.",
-      "checked": "2026-11-15",
+      "what": "Free self-paced Salesforce and AI training on Trailhead, expert-led Trailhead Academy classes with fees waived, and a certification exam voucher covering the roughly $200 fee, plus one retake voucher per certification. A first certification opens the 12-week Salesforce Military Fellowship Program with Hiring Our Heroes.",
+      "checked": "2026-11-16",
       "deadline": null,
       "facts": [
         [
@@ -213,7 +213,7 @@
         ],
         [
           "After certifying",
-          "You can apply for the Hiring Our Heroes 12-week fellowship and get guaranteed interviews through the Salesforce Talent Alliance"
+          "A first Salesforce certification makes you eligible to apply for the 12-week Salesforce Military Fellowship Program, run with Hiring Our Heroes as the partner. Certified members are also connected to hiring partners through the Salesforce Talent Alliance."
         ],
         [
           "Cost",
@@ -238,6 +238,10 @@
         [
           "Use the salesforce.com URL",
           "Circulating material points at veterans.my.site.com/s/, which 302-redirects to trailhead.salesforce.com/salesforce-military with the signup modal open. The redirect works, but the my.site.com domain reads like phishing to an audience that is heavily targeted, so the canonical address is the one worth sharing."
+        ],
+        [
+          "Do not repeat this claim",
+          "Salesforce's own page states that certified members \"access guaranteed interviews with our hiring partners through the Salesforce Talent Alliance.\" The program contacted us directly on 16 November 2026 to say that is not accurate. Treat the Talent Alliance as a connection to hiring partners, not a guarantee of an interview, and do not carry the vendor's wording into a post."
         ]
       ],
       "link": "https://trailhead.salesforce.com/salesforce-military",
@@ -1759,6 +1763,134 @@
       ],
       "link": "https://amazon.jobs/content/en/career-programs/pathways",
       "linkLabel": "Amazon Pathways"
+    },
+    {
+      "org": "HHS — Beyond the Uniform: federal hiring webinar",
+      "what": "A free one-hour webinar on getting hired into federal service, open to anyone with no eligibility gate and no proof of service: navigating USAJOBS, veteran and military spouse hiring authorities, federal résumé construction, application and assessment guidance, interview preparation, and a live Q&A.",
+      "checked": "2026-11-16",
+      "deadline": "2026-11-17",
+      "facts": [
+        [
+          "HHS is the host",
+          "The circulating material never names the host. The USAJOBS federal events calendar lists this session for 17 November under 'Connecting Veterans & Military Spouses-Public Service Opportunities', hosted by the Department of Health and Human Services and carrying the flyer's exact subtitle. HHS sits above CDC, FDA, NIH, CMS, the Indian Health Service and HRSA, so the hiring authorities covered are ones they use daily across far more than clinical roles."
+        ],
+        [
+          "When it runs",
+          "Tuesday 17 November 2026, 2:00 to 3:00 PM Eastern, online, free."
+        ],
+        [
+          "Join on the Teams app",
+          "Browser attendees get no Q&A box. On a session whose value is asking a federal hiring specialist what you are doing wrong, that is the difference between attending and watching. Install the Teams app before the start time."
+        ],
+        [
+          "No eligibility gate",
+          "Open to anyone. No proof of service, no spouse ID, no separation window."
+        ],
+        [
+          "Not the only chance",
+          "Four federal hiring events ran on 17 November alone, with Interior on the 18th and both IRS and the DoD SpouseWorks virtual hiring fair on the 19th. See the USAJOBS events entry — the calendar outlasts any one session."
+        ]
+      ],
+      "link": "https://events.gcc.teams.microsoft.com/event/7a81caf6-57b5-43c9-b774-084b05801d6d@d58addea-5053-4a80-8499-ba4d944910df",
+      "linkLabel": "Register — free"
+    },
+    {
+      "org": "USAJOBS — federal hiring events calendar",
+      "what": "The federal government's own calendar of free hiring events, run by the agencies themselves rather than by third parties: USAJOBS walkthroughs, federal résumé and assessment sessions, veteran and military spouse hiring-authority briefings, and agency virtual hiring fairs. 29 events were listed live on the day of the check.",
+      "checked": "2026-11-16",
+      "deadline": null,
+      "facts": [
+        [
+          "Every event is free",
+          "No registration fee on any listing. Most run one hour online, with a live Q&A, and several each week are veteran- or military spouse-specific."
+        ],
+        [
+          "Hosted by the agencies",
+          "Listings come from the agencies and DoD programs directly — HHS, VA, FDA, FAA, Interior, IRS and the DoD SpouseWorks hiring fairs all appeared in a single week — so the hiring authorities explained are the ones that office uses."
+        ],
+        [
+          "Filter by audience",
+          "The calendar can be filtered, and veteran and military spouse sessions are labelled. Each listing carries its own registration link and its host agency, which is often the detail missing from material circulating about the same event."
+        ],
+        [
+          "Why this one matters",
+          "Any single webinar expires within days. This calendar does not, and it is where the next one appears. Bookmark the calendar rather than the session."
+        ],
+        [
+          "Some sessions repeat",
+          "Agencies run the same briefings on a cycle, so missing one is not losing the information — check the calendar for the next instance rather than waiting a year."
+        ]
+      ],
+      "link": "https://www.usajobs.gov/Event",
+      "linkLabel": "USAJOBS — events calendar"
+    },
+    {
+      "org": "USDA-APHIS — Moore Air Base hiring fair (McAllen, TX)",
+      "what": "A three-day walk-in hiring fair for the New World Screwworm Sterile Fly Production Facility at Moore Air Base, Edinburg TX: meet hiring managers, submit applications in person, interview onsite, and for select positions receive an offer the same day. No registration, no invitation, no fee — bring a resume.",
+      "checked": "2026-11-17",
+      "deadline": "2026-11-19",
+      "facts": [
+        [
+          "Search Edinburg, not McAllen",
+          "The fair is held in McAllen; the facility is Moore Air Base in Edinburg, roughly 20 miles north, and Edinburg is the city the announcements are filed under. APHIS's own job link filters USAJOBS on Edinburg with a 25-mile radius. Searching McAllen returns nothing and reads as 'not posted yet'."
+        ],
+        [
+          "228 positions",
+          "USDA's 10 November press release puts the hiring at 228 positions. APHIS's hiring page describes it as hundreds of professionals across multiple career fields and previews 26 sample titles."
+        ],
+        [
+          "Mostly not science jobs",
+          "Of the 26 previewed titles, 11 sit under skilled trades, craft and labor: maintenance mechanic, water treatment plant operator, insect production worker, laborer, laundry technician among them. The rest cover IT specialist and IT project manager, safety and occupational health, occupational health nurse, biological science lab technician, and management and program analyst."
+        ],
+        [
+          "Postings opened 10 Nov",
+          "Applications went live on USAJOBS on 10 November, a week before the fair. Applying online in advance is what schedules an interview; walking in without applying means the standby queue."
+        ],
+        [
+          "Hours and venue",
+          "17 to 19 November 2026, 8:00 AM to 8:00 PM Central each day, Embassy Suites by Hilton McAllen Convention Center, 800 Convention Center Blvd., McAllen TX 78501."
+        ],
+        [
+          "Check hiring paths per job",
+          "These are competitive-service federal announcements, so each one carries its own 'This job is open to' block naming its hiring paths. Veteran, military spouse and Schedule A eligibility is decided per announcement, not by the program — read that block rather than assuming it applies."
+        ],
+        [
+          "What is being built",
+          "The first sterile fly production facility in the United States, opening spring 2027 with construction finishing April 2027. Targeted at roughly 100 million sterile flies a week in 2027 and about 300 million at full capacity, to keep New World screwworm out of US livestock. The jobs are permanent federal positions standing up a facility that does not exist yet."
+        ]
+      ],
+      "link": "https://www.aphis.usda.gov/careers/job-openings/now-hiring-texas-moore-air-base",
+      "linkLabel": "APHIS — Moore Air Base hiring"
+    },
+    {
+      "org": "Veteran Spouse Network — Coffee Chat (UT Austin)",
+      "what": "A free weekly virtual peer-support hour for military and veteran spouses, partners, family members and caregivers, run every Friday 1:00–2:00 PM Central by the Veteran Spouse Network. Peer-led, no presentation, no obligation to speak — drop in with a drink. Part of a wider programme that also includes the Veteran Spouse Resiliency Group, VSN Social Club, EmpowerEd and Peer 2 Peer Connect.",
+      "checked": "2026-11-18",
+      "deadline": null,
+      "facts": [
+        [
+          "Every Friday, not a one-off",
+          "1:00–2:00 PM Central, 2:00–3:00 PM Eastern, virtual, free. Sessions listed through 18 December 2026 and continuing. Missing one costs nothing; the next is seven days out."
+        ],
+        [
+          "Register 72 hours ahead",
+          "Their FAQ states you must register at least 72 hours before an event, so the cutoff is the Tuesday before a Friday session. The Zoom link arrives in the confirmation email. They also note that anyone joining more than 15 minutes late may not be admitted."
+        ],
+        [
+          "Divorced and widowed count",
+          "Published eligibility covers spouses and partners of active-duty members and post-service veterans, family members and caregivers of the same, and divorcees and widows or widowers of active-duty members and veterans. Most spouse programmes gate on being currently married; this one does not. Eligibility varies by session, so check the specific listing."
+        ],
+        [
+          "Run by UT Austin",
+          "Housed in the Institute for Military & Veteran Family Wellness at the University of Texas at Austin, with the Steve Hicks School of Social Work and Dell Medical School. Founded January 2015 with PCORI funding. Over 800 members. Sessions facilitated by peer leaders with military or veteran backgrounds."
+        ],
+        [
+          "Texas origin, no state gate",
+          "The network was built for Texas and is still based there, but nothing in the published eligibility names a state and the sessions are virtual. Not confirmed either way for out-of-state attendance — vsn@austin.utexas.edu is the address to settle it before registering."
+        ]
+      ],
+      "link": "https://veteranspousenetwork.org/events/",
+      "linkLabel": "VSN — event calendar"
     }
   ]
 }
