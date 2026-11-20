@@ -1891,6 +1891,82 @@
       ],
       "link": "https://veteranspousenetwork.org/events/",
       "linkLabel": "VSN — event calendar"
+    },
+    {
+      "org": "Miles for Military — free flights for junior enlisted",
+      "what": "A nonprofit that gives active-duty junior enlisted service members a free round-trip flight after 25 verified volunteer hours. No financial hardship required, no blackout dates, any duty station in the world to any US state or territory. Close to 2,000 flights provided and over 100,000 volunteer hours logged.",
+      "checked": "2026-11-19",
+      "deadline": null,
+      "facts": [
+        [
+          "Apply 30 days before travel",
+          "Applications must go in at least 30 days ahead of the requested travel dates. For Christmas Day travel that means applying around 25 November. Short-notice requests tied to TDY, PCS, deployment or official orders may be considered case by case. This lead time is absent from almost everything circulating about the programme and it is what decides whether someone gets home."
+        ],
+        [
+          "Active-duty E-1 to E-4 only",
+          "All six branches — Army, Navy, Air Force, Marines, Coast Guard, Space Force. National Guard and Reserve are not eligible at this time. Spouses, children and other dependents do not receive their own tickets. Financial need is not required and is not assessed."
+        ],
+        [
+          "25 hours, last 12 months",
+          "At least 25 volunteer hours completed within the 12 months before the requested flight. Any 501(c)(3), community organisation or on-base programme counts, and hours from several organisations can be combined. A volunteer coordinator's name, phone and email is required and the hours are verified before any travel is booked."
+        ],
+        [
+          "One per calendar year",
+          "One round trip per calendar year, and each subsequent flight requires a fresh set of 25 qualifying hours inside the preceding 12 months."
+        ],
+        [
+          "The cap cannot be topped up",
+          "$1,000 for domestic round trips, $1,500 for international. If the fare exceeds the cap the programme cannot cover the difference AND the member is not permitted to pay it themselves — the fix is different dates or a different airport. Baggage, seat upgrades, wifi and food are the member's own cost, and tickets bought before approval are not reimbursed."
+        ],
+        [
+          "What the application needs",
+          "An LES issued within the last 30 days showing name and pay grade, with SSN and bank details redacted; DoD ID number, branch, grade and base; the commanding officer or NCO's official .mil email; an emergency contact; volunteer coordinator details and total hours; travel dates entered as airport codes rather than names; and leave approved or coordinated. One application only — they make contact before booking."
+        ],
+        [
+          "Where it was covered",
+          "ACT Now Education's Weekly Rundown on Saturday 21 November 2026, 1:00 PM Eastern, free and virtual, featured Jacob Cool of Miles for Military. The session also walked through ACT Now's own free resources: the Career Compass platform, certification pathways including Security+, PMP, SHRM and Scrum, Google, IBM and Splunk learning, and 12,000+ Coursera courses."
+        ]
+      ],
+      "link": "https://www.milesformilitary.org/apply/",
+      "linkLabel": "Miles for Military — apply"
+    },
+    {
+      "org": "Data Center Operations Technician program (Service to Success, VA)",
+      "what": "A paid four-week classroom program at NOVA's Woodbridge campus — 120 instructional hours, with limited attendance at Loudoun — followed by roughly five months of on-the-job training, paid at $28/hour throughout, leading to possible full-time Electrical Operations Technician employment. No prior data center experience required. Target start 15 February 2027, work primarily in Louisa and Fredericksburg, Virginia.",
+      "checked": "2026-11-20",
+      "deadline": "2027-02-15",
+      "facts": [
+        [
+          "Paid from day one",
+          "$28/hour across both the four-week classroom block and the ~5 months of on-the-job training that follow. Paid training with no prior experience required is rare enough in this field to be the headline."
+        ],
+        [
+          "No experience required",
+          "Screening is on mechanical aptitude, technical curiosity, reliability and interest in electrical and mechanical systems. Prior data center experience is explicitly not required — military maintenance, switchgear, plant watch and shipboard engineering backgrounds map directly onto what they are asking for."
+        ],
+        [
+          "Train and work split",
+          "Classroom at NOVA Woodbridge; work primarily in Louisa and Fredericksburg. Fredericksburg is roughly 25 miles from Woodbridge, Louisa roughly 75. Four weeks commuting one direction, then a posting somewhere else — a planning fact, not a disqualifier."
+        ],
+        [
+          "Employer is not named",
+          "The material promises 'opportunity for full-time employment based on performance and successful program completion' but does not name the hiring company. Worth establishing before committing six months."
+        ],
+        [
+          "Who Service to Success is",
+          "Their own site describes them as a technical recruiting and marketing firm connecting professionals with employers — not a nonprofit veteran service organisation and not a school. They are the front door for this program, so questions go to them."
+        ],
+        [
+          "Credential is unclear",
+          "NOVA's published data center offerings are a one-year Career Studies Certificate and a two-year AAS specialisation, both at Loudoun. This four-week cohort does not appear in that catalogue, so ask what, if anything, transcripts or carries a credential at the end."
+        ],
+        [
+          "No deadline published",
+          "The start date is given as a target rather than a commitment and no closing date for applications is published. Re-check before relying on the February date."
+        ]
+      ],
+      "link": "https://servicetosuccess.com/",
+      "linkLabel": "Service to Success"
     }
   ]
 }
