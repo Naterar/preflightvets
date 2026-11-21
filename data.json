@@ -1963,10 +1963,48 @@
         [
           "No deadline published",
           "The start date is given as a target rather than a commitment and no closing date for applications is published. Re-check before relying on the February date."
+        ],
+        [
+          "The application form",
+          "The QR on the posting resolves to a monday.com intake form rather than a company careers page, which is consistent with a recruiting firm running the front door: https://forms.monday.com/forms/92b181caf7b96258e1a3327a03646b4a?r=use1"
         ]
       ],
-      "link": "https://servicetosuccess.com/",
-      "linkLabel": "Service to Success"
+      "link": "https://forms.monday.com/forms/92b181caf7b96258e1a3327a03646b4a?r=use1",
+      "linkLabel": "Apply — intake form"
+    },
+    {
+      "org": "Goldman Sachs Ayco — Regional Insight Days",
+      "what": "In-person insight days at Goldman Sachs Ayco regional offices for second-year undergraduates: workshops, an introduction to the Ayco business and its leadership, a look at internship opportunities across Ayco, and time with the people doing the work. Applicants choose the location nearest their school or home and indicate a preferred internship office in the same application.",
+      "checked": "2026-11-21",
+      "deadline": "2026-12-11",
+      "facts": [
+        [
+          "Deadline 11 Dec, 11:59 PM ET",
+          "Applications close before any of the events run. Selected participants are notified with final event details afterwards."
+        ],
+        [
+          "Five offices, five dates",
+          "Morristown NJ on 7 January; Cohoes NY, Newport Beach CA and Deerfield IL all on 28 January; Dallas TX on 29 January 2027."
+        ],
+        [
+          "Second-years graduating 2029",
+          "Must be a second-year undergraduate graduating by June 2029. Narrow for a veteran audience, but it fits student veterans on the GI Bill, military children and spouses who are sophomores now."
+        ],
+        [
+          "Not the trading floor",
+          "Goldman Sachs Ayco is workplace financial planning — a 'personal CFO' service covering benefits and equity compensation, retirement, cash flow, investments, estate planning, tax, risk and insurance for executives and employees of large companies. Goldman acquired the business in 2003. The regional offices, Cohoes NY among them, are planning operations rather than a Manhattan desk."
+        ],
+        [
+          "Three things are unstated",
+          "Whether the day is paid, whether travel is covered, and whether attending leads to internship consideration rather than being purely an introduction. None of the three appears in the material or on Goldman's own student pages, which say such programmes 'prepare' participants without promising consideration. Ask before applying."
+        ],
+        [
+          "QR matches the link",
+          "The code on the circulating material decodes to exactly the Avature registration URL given alongside it — no discrepancy."
+        ]
+      ],
+      "link": "https://recruiting360.avature.net/candidates?projectId=24124",
+      "linkLabel": "Register interest"
     }
   ]
 }
