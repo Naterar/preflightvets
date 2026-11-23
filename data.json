@@ -2081,6 +2081,74 @@
       ],
       "link": "https://hb4l.org/veteran-beekeeping-school",
       "linkLabel": "Details and application"
+    },
+    {
+      "org": "VA Community Employment Coordinator — American Job Center, Lincoln NE",
+      "what": "Free one-to-one sessions with Jennifer (also listed as Jennie) Hovey, the VA Community Employment Coordinator for the Nebraska / Western Iowa Health Care System: job search and career help, applications and résumés, coordination with VA homeless services and housing resources, and referrals into local community organisations. Held in the Yutan interview room at the American Job Center of Lancaster and Saunders Counties, 1330 N Street, Suite A, Lincoln NE 68508.",
+      "checked": "2026-11-23",
+      "deadline": null,
+      "facts": [
+        [
+          "Weekly, not a one-off",
+          "The American Job Center's own event listing describes this as running 'Tuesday's from 8:00am - Noon'. Circulating material presents single dates such as 24 November 2026 as standalone events, which makes a standing weekly service look like a deadline."
+        ],
+        [
+          "By appointment, so call",
+          "The AJC staff directory lists her under 'Partners Available by Appointment' rather than as on-site staff, and the event listing says appointments are made by calling 402-676-7319. Walking in cold risks a wasted trip."
+        ],
+        [
+          "Her VA email works any day",
+          "jennifer.hovey@va.gov, from VA's own Community Employment Coordinator contact list. Useful when Tuesday mornings are not possible."
+        ],
+        [
+          "Three more veteran reps",
+          "Working out of the same building and absent from all circulating material: Owen Schuette, Disabled Veterans' Outreach Program and Local Veterans' Employment Representative, 402-471-2278; Andrew Strasburg, Veteran Job-Seeker Services, 402-471-4477; Matthew Davis, Veteran's Reemployment Coordinator, 402-471-9915. The DVOP role exists for veterans with significant barriers to employment. Main center line 402-441-1640."
+        ],
+        [
+          "What a CEC is",
+          "The VA's link between veterans and local employers and workforce services. The role sits inside VA's homeless programs structure — structure, not a gate: nothing in the listing restricts the outreach to veterans who are homeless, and framing it that way would stop the people who need it from attending."
+        ],
+        [
+          "Every state has one",
+          "CECs are a national VA programme and every American Job Center has veteran representatives. Outside Nebraska the transferable move is to ask the local center for the CEC and the DVOP by title."
+        ]
+      ],
+      "link": "https://ajc.lincoln.ne.gov/events/",
+      "linkLabel": "AJC Lincoln — event calendar"
+    },
+    {
+      "org": "Service to Success — SkillBridge job board",
+      "what": "A technical recruiting firm's board of DoD SkillBridge placements with its industry partners, in tech, data and engineering. Roles listed on 23 November 2026: Network Test Lab Engineer (Roseville CA hybrid or Andover MA); Junior Data Engineer (Cincinnati OH, major US bank, up to $90K after); Data / Product Analyst (Atlanta GA, Fortune 500 aviation, $90–120K on completion).",
+      "checked": "2026-11-23",
+      "deadline": null,
+      "facts": [
+        [
+          "SkillBridge pays no wages",
+          "Industry partners are not permitted to pay SkillBridge participants. DoD continues the member's salary, allowances and benefits for the duration, and the host cannot pay a wage, salary or stipend for SkillBridge time. Any hourly or annual figure on a SkillBridge listing is what the role pays IF hired afterwards. Circulating material put '$35-40/hr (~$73-94k/yr)' under a SKILLBRIDGE badge with no 'after' qualifier, which reads as pay during the placement. This recurs on nearly every SkillBridge flyer — check it every time."
+        ],
+        [
+          "Finishing is not an offer",
+          "Completing a SkillBridge placement does not entitle the participant to employment with the host. Conversion happens but is earned during the placement, not promised at the start."
+        ],
+        [
+          "Two eligibility gates",
+          "180 continuous days of active duty must already be completed before starting, and participation must fall inside the final 180 days before separation or retirement."
+        ],
+        [
+          "Command approval is the gate",
+          "Approval comes from the first field-grade commander in the chain with Article 15 authority. SkillBridge is permissive duty, so it can be denied or terminated early for operational need. Start that conversation before committing to a listing."
+        ],
+        [
+          "Days are capped by rank",
+          "DoD allows up to 180 days but each service sets its own caps by rank — for the Army, E-1 to E-5 get 120 days and E-8 and above get 60. Check the current cap for your own branch and paygrade."
+        ],
+        [
+          "Who runs the board",
+          "Service to Success describes itself as a technical recruiting and marketing firm connecting professionals with employers, not a nonprofit or a school. See the separate entry for their Data Center Operations Technician program."
+        ]
+      ],
+      "link": "https://servicetosuccess.com/jobs",
+      "linkLabel": "Service to Success — jobs"
     }
   ]
 }
