@@ -1679,9 +1679,17 @@
     {
       "org": "Amazon Military — 11 hiring tracks",
       "what": "Amazon's military talent acquisition routes for veterans, transitioning service members and military spouses: a landing page, cleared roles, Pathways, two apprenticeships, Hiring Our Heroes fellowships, data center roles, a skills translator, a webinar series, job simulations, Amazon Leo and Reliability Maintenance Engineering.",
-      "checked": "2026-11-14",
+      "checked": "2026-11-24",
       "deadline": null,
       "facts": [
+        [
+          "QR destinations, decoded",
+          "1  Military landing page = https://www.amazon.jobs/military; 2  Cleared roles = https://amazon.jobs/content/en/cleared-talent; 3  Pathways (Operations) = https://amazon.jobs/content/en/career-programs/pathways; 4a Tech apprenticeship = https://www.amazon.jobs/en/landing_pages/mil-apprentice; 4b RME apprenticeship = https://www.amazon.jobs/en/landing_pages/rme-apprentice; 5  Fellowships (HOH) = https://www.hiringourheroes.org/career-services/fellowships/; 6  Data center roles = https://amazon.jobs/content/en/teams/amazon-web-services/data-centers; 7  Military Skills Translator = https://amazon.oplign.com/; 8  Military Webinar Series = https://www.amazon.jobs/military  [same as #1]; 9  Job simulation = https://app.redeployable.io/join; 10 Amazon Leo = https://amazon.jobs/content/en/teams/devices-services/leo; 11 Reliability Maint. Eng. = https://amazon.jobs/content/en/teams/amazon-operations  [general Operations]"
+        ],
+        [
+          "Two codes mismatch labels",
+          "Re-decoded 24 November, nine days after the first check, same result. #8 Military Webinar Series resolves to the general military landing page, identical to #1, not to anything webinar-specific. #11 Reliability Maintenance Engineering resolves to the general Amazon Operations team page, not to RME; the RME apprenticeship link at #4b is the more direct route. One of the two Job Simulations codes would not decode from the circulated image."
+        ],
         [
           "Several need no degree",
           "Data center roles are advertised as many not requiring a college degree. Both apprenticeships are built to supply the skills. Military Pathways lists an engineering bachelor's as preferred rather than required."
