@@ -2157,6 +2157,78 @@
       ],
       "link": "https://servicetosuccess.com/jobs",
       "linkLabel": "Service to Success — jobs"
+    },
+    {
+      "org": "ACT Now Education — Weekly Rundown",
+      "what": "A free weekly live session from ACT Now Education on Zoom, open to the military community, pairing an outside speaker with a walk through ACT Now's own free resources — the Career Compass platform, certification pathways including Security+, PMP, SHRM and Scrum, Google, IBM and Splunk learning, and 12,000+ Coursera courses.",
+      "checked": "2026-11-26",
+      "deadline": null,
+      "facts": [
+        [
+          "Weekly and free",
+          "Runs on Saturdays, 1:00 PM Eastern, live on Zoom, free. Registration and the current schedule sit at actnoweducation.org/weekly-rundown, which is also exactly where the flyer QR resolves."
+        ],
+        [
+          "Two sessions on 28 Nov",
+          "ACT Now ran two free AI sessions on Saturday 28 November 2026, five hours apart and aimed at different audiences. 1:00 PM ET, the Weekly Rundown with Michael Wish of White Feather AI on building a personal AI agent for your own email, calendar and task list. 6:00 PM ET, a live demo with Robbe Addis of Ready Waypoint on AI for business owners — morning brief, drafted replies, follow-ups sorted by urgency — hosted with Jai Salters and Nicole Dhanraj. Registration for the 6 PM session was a direct Zoom link: us02web.zoom.us/meeting/register/A1Mb8qPTSmKNKRSbNW5WvA"
+        ],
+        [
+          "AI agents: access warning",
+          "An agent that manages mail and calendar needs a real permission grant to those accounts. For active duty, DoD civilians, contractors and cleared personnel, connecting a third-party AI tool to a work or .mil account is very likely against policy and can be a reportable incident. Use a personal account, grant read and draft before send, and check the organisation's own AI policy first. This applies to every AI-agent session, not just this one."
+        ],
+        [
+          "Who White Feather AI are",
+          "Michael Wish runs White Feather AI, which trains veterans and first responders on AI. Skool community of roughly 417 members; published pitch is a first AI-driven income stream within 45 days. The community lists as free but reviewers describe themselves as paying members, so pricing is unclear from outside. The Rundown session itself is free and hosted by ACT Now."
+        ],
+        [
+          "Earlier sessions",
+          "21 November 2026 featured Jacob Cool of Miles for Military on volunteering — see the separate Miles for Military entry for the free flights programme behind it."
+        ],
+        [
+          "Ready Waypoint unverified",
+          "Searches on 26 November returned several similarly named AI firms and none that confirm this one; Robbe Addis's LinkedIn is not fetchable. He is named here as the presenter because the host says so — nothing beyond that is established."
+        ]
+      ],
+      "link": "https://www.actnoweducation.org/weekly-rundown",
+      "linkLabel": "ACT Now — Weekly Rundown"
+    },
+    {
+      "org": "ACT Now Education — 10 benefits for military families",
+      "what": "A ten-resource card from ACT Now Education covering free vehicles, flights, hotel points, hotel stays, business and certification training, professional clothing, a children's summer camp and family retreats. All ten QR codes on the card were decoded and every destination opened and read on 27 November 2026. Eight are accurate as printed; two carry conditions the card does not state and one link circulates in two different forms.",
+      "checked": "2026-11-27",
+      "deadline": null,
+      "facts": [
+        [
+          "Hilton: lifetime ceiling",
+          "The 100,000 Hilton Honors points figure is a lifetime maximum per person, not an annual allowance. Only 33 states participate and each sets its own rules. Applications go through a veterans representative at an American Job Center, or HiltonHonors@naswa.org — not through Hilton directly. Covers job-interview and training travel. Does NOT cover conferences, career fairs, general job searching, relocation or house hunting. Active duty are generally ineligible unless transitioning. naswa.org/partnerships/hilton-honors"
+        ],
+        [
+          "Progressive: no 2027 dates",
+          "Keys to Progress 2026 is closed for all three categories. Progressive's own page says to check back later for 2027 application timelines — no window has been published anywhere. Any specific 2027 date in circulation did not come from Progressive. progressive.com/about/purpose/keys-to-progress/"
+        ],
+        [
+          "MWR: two addresses",
+          "The card's QR resolves to militaryonesource.mil/mwr-digital-library, which is the official front door and where sign-in works. Other copies of this list circulate dodmwrlibraries.org instead. Use the Military OneSource address."
+        ],
+        [
+          "Purple Camp: deposit unclear",
+          "The National Military Family Association's own page describes free weeklong summer camp experiences and does not mention any fee. The card prints a $25 refundable deposit. Both may hold depending on site and year — confirm at registration. Travel to camp is not covered. militaryfamily.org/programs/operation-purple/operation-purple-camp/"
+        ],
+        [
+          "Warrior Retreat: narrower",
+          "Willing Warriors serves wounded, ill and injured service members and their families, and the programme is built around military hospitals in the National Capital Region. Their page states neither weeklong, nor six-day, nor free. Not advertised as a general veteran benefit. willingwarriors.org/warrior-retreat"
+        ],
+        [
+          "Five verified as printed",
+          "Operation Homefront (operationhomefront.org/our-programs/), Fisher House (fisherhouse.org/programs/), EBV at Syracuse IVMF (ivmf.syracuse.edu/ebv), Save A Suit (saveasuit.org/requestasuit/) and Onward to Opportunity (ivmf.syracuse.edu/programs/o2o) all resolve to live pages with current intake and nothing on the card misstates them. EBV requires a post-9/11 service-connected disability; Save A Suit works on demonstrated need and stock on hand."
+        ],
+        [
+          "All 10 codes decoded",
+          "Every QR on the card was decoded on 27 November 2026 and each destination opened. No code is dead and none redirects somewhere unexpected."
+        ]
+      ],
+      "link": "https://www.actnoweducation.org/",
+      "linkLabel": "ACT Now Education"
     }
   ]
 }
